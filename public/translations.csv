@@ -1,0 +1,797 @@
+key;id;en
+app_title;SUMAVIS;SUMAVIS
+dashboard;Dashboard;Dashboard
+transactions;Transaksi;Transactions
+accounts;Rekening;Accounts
+investments;Investasi;Investments
+budgets;Anggaran;Budgets
+bills;Tagihan;Bills
+saving_goals;Target Tabungan;Saving Goals
+settings;Pengaturan;Settings
+net_worth;Total Kekayaan Bersih;Total Net Worth
+income;Pemasukan;Income
+expense;Pengeluaran;Expense
+savings_rate;Rasio Tabungan;Savings Rate
+recent_transactions;Transaksi Terakhir;Recent Transactions
+active_month;Bulan Aktif;Active Month
+liabilities;Utang / Kewajiban;Liabilities
+savings_balance;Sisa Kas Bulanan;Monthly Net Savings
+cash_flow_trend;Tren Arus Kas;Cash Flow Tren
+asset_allocation;Alokasi Aset Neto;Net Asset Allocation
+budget_monitoring;Pemantauan Anggaran Kategori;Category Budget Monitoring
+no_transactions;Belum ada transaksi terekam.;No transactions recorded yet.
+no_budgets;Belum ada anggaran diset.;No budgets set yet.
+no_assets;Belum ada rekening terdaftar.;No accounts registered yet.
+no_bills;Belum ada tagihan rutin.;No recurring bills.
+add_transaction;Catat Transaksi;Add Transaction
+search_placeholder;Cari transaksi / tag...;Search transactions / tags...
+all_types;Semua Tipe;All Types
+all_categories;Semua Kategori;All Categories
+all_accounts;Semua Rekening;All Accounts
+add_account;Tambah Rekening;Add Account
+add_budget;Set Anggaran;Set Budget
+add_bill;Tambah Tagihan;Add Bill
+update_prices;Perbarui Harga;Update Prices
+buy_stock;Beli Saham;Buy Stock
+buy_crypto;Beli Kripto;Buy Crypto
+stock_portfolio;Portofolio Saham;Stock Portfolio
+crypto_portfolio;Portofolio Kripto;Crypto Portfolio
+unrealized_gain;Unrealized Gain / Loss;Unrealized Gain / Loss
+roi_positive;ROI Portofolio Positif;Positive Portfolio ROI
+roi_negative;ROI Portofolio Negatif;Negative Portfolio ROI
+language;Pilihan Bahasa;Language Selection
+theme_setting;Tema Aplikasi;App Theme
+theme_dark;Gelap;Dark
+theme_light;Terang;Light
+custom_csv_upload;Unggah File Terjemahan (CSV Excel);Upload Translation File (Excel CSV)
+save_credentials;Simpan Kredensial;Save Credentials
+connect_google;Otorisasi Google;Authorize Google
+sync_now;Sinkronisasi Sekarang;Sync Now
+local_backup;Backup Lokal & Administrasi;Local Backup & Admin
+export_json;Ekspor JSON;Export JSON
+import_json;Impor JSON;Import JSON
+reset_db;Hapus Data;Clear Data
+currency_default;Mata Uang Default;Default Currency
+amount_label;Nominal;Amount
+date_label;Tanggal;Date
+description_label;Keterangan;Description
+source_account_label;Rekening Asal;Source Account
+destination_account_label;Rekening Tujuan;Destination Account
+category_label;Kategori;Category
+tags_label;Tag;Tags
+cancel_label;Batal;Cancel
+save_label;Simpan;Save
+pay_bill;Bayar;Pay
+overdue_label;Telat;Overdue
+due_date_label;Jatuh Tempo;Due Date
+frequency_label;Frekuensi;Frequency
+weekly_label;Mingguan;Weekly
+monthly_label;Bulanan;Monthly
+yearly_label;Tahunan;Yearly
+stock_symbol_label;Kode Saham;Stock Symbol
+stock_name_label;Nama Saham;Stock Name
+quantity_label;Jumlah Unit;Quantity
+avg_price_label;Harga Average;Average Price
+crypto_coin_label;Simbol Koin;Coin Ticker
+crypto_name_label;Nama Koin;Coin Name
+account_notes_label;Catatan Rekening;Account Notes
+account_type_label;Tipe Rekening;Account Type
+account_balance_label;Saldo Awal;Initial Balance
+cash_bank_group;Aset Lancar (Kas & Bank);Current Assets (Cash & Bank)
+investments_group;Aset Investasi;Investment Assets
+liabilities_group;Kewajiban (Utang / Kartu Kredit);Liabilities (Debt / Credit Card)
+status_sync;Status Sync;Sync Status
+connection_label;Koneksi;Connection
+offline_mode_label;Mode Lokal;Offline Mode
+synced_label;Tersinkronisasi;Synced
+unsynced_label;Perlu Sinkronisasi;Unsynced
+g_credentials_label;Kredensial Google;Google Credentials
+sync_status_label;Status & Kontrol Sinkronisasi;Sync Status & Control
+localization_title;Lokalisasi & Mata Uang;Localization & Currency
+database_reset_alert;Reset Database Lokal;Reset Local Database
+db_reset_description;Hapus semua data tersimpan dan mulai ulang.;Delete all stored data and restart.
+edit_transaction;Ubah Transaksi;Edit Transaction
+edit_account;Ubah Rekening;Edit Account
+bills_title;Tagihan Rutin & Subskripsi;Recurring Bills & Subscriptions
+bills_subtitle;Kelola biaya berulang seperti Netflix, listrik, internet, dan catat pembayaran dengan cepat.;Manage recurring expenses like Netflix, electricity, internet, and quickly record payments.
+add_bill_btn;Tambah Tagihan;Add Bill
+bill_name;Nama Langganan / Tagihan;Subscription / Bill Name
+bill_amount;Nominal;Amount
+bill_frequency;Frekuensi;Frequency
+bill_source_account;Rekening Sumber Debet;Debit Source Account
+bill_category;Kategori Transaksi;Transaction Category
+bill_due_date;Tanggal Jatuh Tempo Berikutnya;Next Due Date
+confirm_delete_bill;Apakah Anda yakin ingin menghapus catatan tagihan rutin ini?;Are you sure you want to delete this recurring bill record?
+bill_debit_account;Rekening Debet;Debit Account
+bill_nominal;Tagihan Nominal;Bill Amount
+no_bills_desc;Belum ada tagihan rutin terdaftar. Tambahkan tagihan langganan bulanan Anda!;No recurring bills registered yet. Add your monthly subscription bills!
+add_bill_modal_title;Tambah Tagihan Langganan;Add Subscription Bill
+alert_need_account;Harap buat rekening transaksi terlebih dahulu!;Please create a transaction account first!
+alert_fill_all;Isi semua kolom dengan benar!;Please fill in all fields correctly!
+alert_create_failed;Gagal membuat tagihan:;Failed to create bill:
+alert_pay_confirm;"Tandai tagihan ""{name}"" senilai {amount} sebagai TELAH DIBAYAR? Tindakan ini akan otomatis mencatat transaksi pengeluaran.";"Mark bill ""{name}"" with amount {amount} as PAID? This will automatically record an expense transaction."
+alert_pay_success;Tagihan berhasil dibayar & transaksi pengeluaran otomatis tercatat!;Bill paid successfully & expense transaction recorded automatically!
+alert_pay_failed;Gagal membayar tagihan:;Failed to pay bill:
+alert_delete_failed;Gagal menghapus tagihan:;Failed to delete bill:
+bill_payment_desc;Pembayaran Tagihan:;Bill Payment:
+bill_pay;Bayar;Pay
+delete_bill_title;Hapus Tagihan;Delete Bill
+default_account_name;Utama;Main
+settings_subtitle;Konfigurasi sinkronisasi cloud, backup data lokal, dan mata uang.;Configure cloud sync, local data backups, and default currency.
+google_api_credentials;Google API Credentials;Google API Credentials
+oauth_client_id;OAuth 2.0 Client ID;OAuth 2.0 Client ID
+google_api_key;Google API Key (Opsional);Google API Key (Optional)
+spreadsheet_id_label;Spreadsheet ID (Terisi Otomatis);Spreadsheet ID (Auto-filled)
+how_to_get_creds;Cara Mendapatkan Kredensial Google:;How to Get Google Credentials:
+step_1_gcloud;Buka Google Cloud Console.;Open Google Cloud Console.
+step_2_gcloud;Buat proyek baru, lalu aktifkan Google Sheets API dan Google Drive API.;Create a new project, then enable Google Sheets API and Google Drive API.
+step_3_gcloud;Masuk ke menu OAuth consent screen, lalu daftarkan email Anda sebagai Test Users.;Go to OAuth consent screen and register your email as Test Users.
+step_4_gcloud;Masuk ke menu Credentials, lalu buat OAuth 2.0 Client ID (pilih Web Application).;Go to Credentials, then create OAuth 2.0 Client ID (choose Web Application).
+step_5_gcloud;Tambahkan URL domain Vercel Anda (atau http://localhost:5173 untuk lokal) di bagian Authorized Javascript Origins.;Add your Vercel domain URL (or http://localhost:5173 for local) in Authorized Javascript Origins.
+g_connection_status;Status Google Connection;Google Connection Status
+connected_session;Dihubungkan (Sesi Aktif);Connected (Active Session)
+unauthenticated;Belum Terotentikasi;Unauthenticated
+disconnect_btn;Putuskan;Disconnect
+sync_activity;Aktivitas Sinkronisasi;Sync Activity
+not_connected;Belum dihubungkan;Not connected
+connecting_google;Menghubungkan ke Google...;Connecting to Google...
+syncing_data;Menyinkronkan data...;Syncing data...
+synced_g_sheets;Tersinkronisasi dengan Google Sheet!;Synced with Google Sheet!
+sync_failed;Gagal sinkronisasi:;Sync failed:
+auth_failed;Gagal otentikasi:;Authentication failed:
+connection_disconnected;Koneksi diputuskan.;Connection disconnected.
+g_sheets_disconnected_alert;Koneksi Google Sheets berhasil diputus!;Google Sheets connection disconnected successfully!
+sync_success_alert;Sinkronisasi berhasil!;Sync succeeded!
+failed_prefix;Gagal:;Failed:
+error_prefix;Error:;Error:
+select_csv_file;Pilih File Excel / CSV;Select Excel / CSV File
+custom_csv_desc;Edit file kamus (Excel / CSV), isi terjemahan Anda di kolom 'custom' (kolom ke-4), lalu unggah file tersebut di sini.;Edit the translation file (Excel / CSV), fill in your translation in the 'custom' column (4th column), then upload it here.
+creds_saved_alert;Kredensial berhasil disimpan!;Credentials saved successfully!
+enter_client_id_alert;Masukkan Client ID terlebih dahulu!;Please enter Client ID first!
+confirm_import_backup;Peringatan: Mengimpor file backup akan menimpa data lokal Anda. Lanjutkan?;Warning: Importing a backup will overwrite your local data. Continue?
+backup_imported_alert;Data backup berhasil diimpor!;Backup data imported successfully!
+invalid_backup_format;Format file backup salah:;Invalid backup file format:
+read_file_failed;Gagal membaca file:;Failed to read file:
+confirm_reset_db;PENTING: Apakah Anda yakin ingin menghapus seluruh data lokal? Tindakan ini tidak dapat dibatalkan.;IMPORTANT: Are you sure you want to delete all local data? This action cannot be undone.
+db_reset_success_alert;Database berhasil direset ke pengaturan awal!;Database reset to default configuration successfully!
+db_reset_failed;Gagal mereset database:;Failed to reset database:
+export_failed;Gagal mengekspor backup:;Failed to export backup:
+bill_name_placeholder;Contoh: Netflix, Indihome, BPJS;E.g. Netflix, Internet, Insurance
+bill_amount_placeholder;Contoh: 150000;E.g. 150000
+alert_account_name_required;Nama rekening harus diisi!;Account name is required!
+alert_save_account_failed;Gagal menyimpan rekening:;Failed to save account:
+alert_delete_account_failed;Gagal menghapus rekening:;Failed to delete account:
+no_investments_desc;Belum ada rekening investasi terdaftar.;No investment accounts registered.
+no_liabilities_desc;Belum ada tagihan kartu kredit atau hutang terdaftar.;No credit card bills or debts registered.
+account_name_label;Nama Rekening / Dompet;Account / Wallet Name
+account_name_placeholder;Contoh: Bank Mandiri Utama, Uang Tunai Saku;e.g. Bank Account, Cash Pocket
+account_balance_placeholder;Saldo saat ini (contoh: 1000000);Current balance (e.g. 1000000)
+account_balance_hint;Saldo baseline ini dihitung di luar mutasi transaksi terekam.;This baseline balance is calculated outside of recorded transaction movements.
+notes_placeholder;Keterangan opsional...;Optional notes...
+notes_label;Catatan;Notes
+confirm_delete_account;Apakah Anda yakin ingin menghapus rekening ini? Seluruh saldo rekening akan disembunyikan.;Are you sure you want to delete this account? The entire account balance will be hidden.
+virtual_account_alert;Kategori virtual bawaan tidak dapat dihapus!;Default virtual accounts cannot be deleted!
+theme_toggle_instruction_desc;Pengaturan tema sekarang menggunakan tombol toggle (ikon Matahari/Bulan) yang terletak di Sidebar (Desktop) atau Header (Mobile) agar dapat diakses dari semua halaman.;Theme settings are now controlled via the toggle button (Sun/Moon icon) located on the Sidebar (Desktop) or Header (Mobile) for access across all pages.
+oauth_client_id_placeholder;Masukkan Google OAuth Client ID...;Enter Google OAuth Client ID...
+google_api_key_placeholder;Masukkan Google API Key...;Enter Google API Key...
+spreadsheet_id_placeholder;Akan terisi otomatis setelah tersinkronisasi...;Will be auto-filled after synchronized...
+categories;Kategori;Categories
+categories_title;Kelola Kategori;Manage Categories
+categories_subtitle;Kelola kategori pemasukan dan pengeluaran keuangan Anda.;Manage your financial income and expense categories.
+add_category;Tambah Kategori;Add Category
+edit_category;Ubah Kategori;Edit Category
+category_name;Nama Kategori;Category Name
+category_type;Tipe Kategori;Category Type
+category_color;Warna Kategori;Category Color
+category_icon;Ikon Kategori;Category Icon
+confirm_delete_category;Apakah Anda yakin ingin menghapus kategori ini? Target anggaran untuk kategori ini juga akan terpengaruh.;Are you sure you want to delete this category? Budget targets for this category will also be affected.
+save_category_btn;Simpan Kategori;Save Category
+category_expense_label;Pengeluaran;Expense
+category_income_label;Pemasukan;Income
+no_categories_desc;Belum ada kategori terdaftar. Tambahkan kategori baru!;No categories registered yet. Add a new category!
+budgets_title;Anggaran Kategori;Category Budgets
+budgets_subtitle;Pantau dan atur batas pengeluaran per kategori untuk bulan ini.;Monitor and set spending limits per category for this month.
+set_budget;Set Anggaran;Set Budget
+accounts_title;Daftar Rekening & Dompet;Accounts & Wallets
+accounts_subtitle;Kelola semua rekening bank, dompet, dan sumber dana Anda.;Manage all your bank accounts, wallets, and funding sources.
+balance_label;Saldo;Balance
+investments_title;Pelacak Portofolio Investasi;Investment Portfolio Tracker
+investments_subtitle;Pantau saham dan kripto Anda secara real-time.;Monitor your stocks and crypto in real-time.
+total_capital;Total Modal Disetor;Total Capital Invested
+capital_subtitle;Jumlah semua modal yang telah diinvestasikan;Sum of all invested capital
+current_value;Nilai Portofolio Sekarang;Current Portfolio Value
+value_subtitle;Estimasi nilai pasar saat ini;Current estimated market value
+actions_label;Aksi;Actions
+current_price;Harga Market;Market Price
+no_stocks;Belum ada kepemilikan saham terekam.;No stock holdings recorded yet.
+no_cryptos;Belum ada kepemilikan kripto terekam.;No crypto holdings recorded yet.
+save_bill_btn;Simpan Tagihan;Save Bills
+sync_status_label;Google Sheets Sync;Google Sheets Sync
+sync_folder_info_prefix;Data disinkronkan ke Google Drive folder;Data is synchronized to Google Drive folder
+refresh_prices;Perbarui Harga;Refresh Prices
+refreshing_prices;Memperbarui Harga;Refreshing Prices
+transfer_type;Transfer;Transfer
+type_label;Tipe;Type
+actual_spend;Realisasi Belanja;Actual Spend
+budgeted;Batas Anggaran;Budget Limit
+transfer_funds_title;Transfer Dana;Transfer Funds
+capital_value_label;Nilai Modal;Capital Value
+debt_amount_label;Jumlah Utang;Debt Amount
+account_currency_label;Mata Uang Rekening;Account Currency
+other_currency_label;Lainnya;Other
+balance_adjustment_mode;Mode Penyesuaian Saldo;Balance Adjustment Mode
+active_checkmark;✓ aktif;✓ active
+current_system_balance;Saldo Sistem Saat Ini;Current System Balance
+actual_balance_label;Saldo Aktual (sesuai rekening bank);Actual Balance (from bank statement)
+enter_actual_placeholder;Masukkan saldo aktual...;Enter actual balance...
+adjustment_delta;Selisih penyesuaian:;Adjustment delta:
+adjustment_disclaimer;Penyesuaian ini hanya memperbarui saldo rekening secara langsung dan tidak membuat atau mengubah transaksi manapun.;This adjustment only updates the account balance directly and does not create or modify any transactions.
+alert_enter_budget_limit;Masukkan jumlah anggaran!;Please enter budget limit!
+alert_set_budget_failed;Gagal menetapkan anggaran:;Failed to set budget:
+alert_delete_budget_failed;Gagal menghapus anggaran:;Failed to delete budget:
+total_budget_allocated;Total Anggaran Dialokasikan;Total Budget Allocated
+total_actual_spent;Total Realisasi Pengeluaran;Total Actual Spent
+remaining_budget;Sisa Selisih Anggaran;Remaining Budget
+budget_status;Status Anggaran;Budget Status
+delete_budget_title;Hapus Anggaran;Delete Budget
+used_label;Terpakai;Used
+remaining_label;Sisa;Remaining
+over_limit_label;Over limit;Over limit
+budget_not_set;Anggaran belum diatur;Budget not set
+no_expense_categories_budget;Belum ada kategori pengeluaran terdaftar. Kategori diperlukan untuk mengatur anggaran!;No expense categories registered. Categories are required to manage budgets!
+select_expense_category;Pilih Kategori Pengeluaran;Select Expense Category
+monthly_budget_limit;Batas Anggaran Bulanan;Monthly Budget Limit
+budget_amount_placeholder;Contoh: 1500000;E.g. 1500000
+manual_rate_label;Kurs Manual;Manual Rate
+manual_rate_prefix;Kurs manual;Manual rate
+input_usd_amount;Input nominal dalam USD;Input amount in USD
+usd_amount_placeholder;Contoh: 9.99;E.g. 9.99
+summary_label;Ringkasan;Summary
+dashboard_subtitle;Lihat pertumbuhan kekayaan, portofolio investasi, dan performa anggaran Anda.;Monitor your net worth growth, investment portfolio, and budget performance.
+refresh_rate_title;Perbarui kurs;Refresh rate
+updated_label;Diperbarui:;Updated:
+combined_label;Gabungan;Combined
+this_month;Bulan Ini;This Month
+cash_inflows_desc;Arus kas masuk terdeteksi;Total cash inflows recorded
+cash_outflows_desc;Arus kas keluar terdeteksi;Total cash outflows recorded
+period_daily;(Harian);(Daily)
+period_3months;(3 Bulan);(3 Months)
+period_6months;(6 Bulan);(6 Months)
+period_1year;(1 Tahun);(1 Year)
+period_custom;(Kustom);(Custom)
+daily_label;Hari;Daily
+range_label;Rentang;Range
+from_label;Dari;From
+to_label;Hingga;To
+no_assets_registered;Belum ada aset terdaftar. Rekam rekening kas atau portofolio investasi Anda!;No registered assets. Record a cash account or investment portfolio!
+active_this_month;Aktif Bulan Ini;Active This Month
+budget_overspent;Anggaran Terlampaui!;Budget Overspent!
+in_label;Masuk;In
+out_label;Keluar;Out
+alert_delete_tx_failed;Gagal menghapus transaksi:;Failed to delete transaction:
+transactions_subtitle;Rekam pemasukan, pengeluaran, dan transfer antar rekening.;Record income, spending, and transfers between accounts.
+delete_transaction_title;Hapus Transaksi;Delete Transaction
+no_transactions_found;Tidak ada transaksi ditemukan yang cocok dengan kriteria filter.;No transactions found matching filter criteria.
+input_usd_label;Input dalam USD;Input in USD
+amount_placeholder;Contoh: 100000;E.g. 100000
+transaction_desc_placeholder;Contoh: Beli makan siang, Gaji Bulanan...;e.g. Lunch, Monthly Salary...
+recipient_account_label;Rekening Penerima;Recipient Account
+tags_separator_label;Pisahkan dengan koma;Separate with comma
+tags_placeholder;Contoh: kuliner, bulanan, hobi;e.g. dining, monthly, hobby
+alert_category_name_required;Nama kategori harus diisi!;Category name is required!
+alert_save_category_failed;Gagal menyimpan kategori:;Failed to save category:
+alert_delete_category_failed;Gagal menghapus kategori:;Failed to delete category:
+category_name_placeholder;Contoh: Makanan, Transportasi, Gaji;E.g. Food, Transport, Salary
+custom_icon_keyboard_label;Atau Ketik Ikon/Emoji Sendiri (Keyboard);Or Type Custom Icon/Emoji (Keyboard)
+custom_icon_placeholder;Contoh: 🍔, 🚗, 💰, A;e.g. 🍔, 🚗, 💰, A
+alert_fill_all_fields;Isi semua kolom dengan benar!;Please fill in all fields correctly!
+alert_create_goal_failed;Gagal membuat target:;Failed to create goal:
+alert_enter_amount;Masukkan jumlah nominal!;Please enter an amount!
+alert_linked_account_not_found;Rekening tujuan tidak ditemukan!;Linked account not found!
+alert_insufficient_balance_prefix;Saldo;Insufficient balance in
+saving_top_up_label;Top Up Tabungan;Saving Top Up
+alert_topup_failed;Gagal top up:;Top up failed:
+alert_withdraw_exceeds;Jumlah penarikan melebihi saldo tersedia!;Withdrawal amount exceeds available balance!
+saving_withdrawal_label;Penarikan Tabungan;Saving Withdrawal
+alert_withdraw_failed;Gagal menarik:;Withdrawal failed:
+confirm_delete_saving_goal;Apakah Anda yakin ingin menghapus target tabungan ini?;Are you sure you want to delete this saving goal?
+alert_delete_failed_general;Gagal menghapus:;Failed to delete:
+saving_goals_title;Target Tabungan;Saving Goals
+saving_goals_subtitle;Pantau progress target tabungan Anda. Saldo hanya bisa diisi via transfer dari rekening terpaut.;Track your saving goals progress. Balance can only be filled via transfer from linked account.
+new_saving_goal;Buat Target Baru;New Saving Goal
+total_target;Total Target;Total Target
+total_saved;Terkumpul;Saved
+remaining_goal;Sisa Target;Remaining
+overall_progress;Progress Keseluruhan;Overall Progress
+completed_label;Tercapai;Completed
+goal_label;Target;Goal
+achieved_on;Tercapai pada;Achieved on
+delete_goal_title;Hapus Target;Delete Goal
+top_up_label;Top Up;Top Up
+withdraw_label;Tarik;Withdraw
+no_saving_goals;Belum ada target tabungan. Buat target baru untuk memulai!;No saving goals yet. Create a new goal to get started!
+create_saving_goal;Buat Target Tabungan;New Saving Goal
+goal_name_label;Nama Target;Goal Name
+goal_name_placeholder;Contoh: Liburan Bali, DP Rumah;E.g. Vacation, House DP
+target_amount_label;Jumlah Target;Target Amount
+target_date_label;Target Tanggal;Target Date
+linked_account_label;Rekening Terpaut;Linked Account
+no_accounts;Tidak ada rekening;No accounts
+linked_account_hint;Top Up akan ditransfer dari rekening ini. Penarikan akan dikembalikan ke rekening ini.;Top Up will be transferred from this account. Withdrawals return here.
+top_up_savings;Top Up Tabungan;Top Up Savings
+current_progress;Progress Saat Ini;Current Progress
+top_up_amount_label;Jumlah Top Up;Top Up Amount
+enter_amount_placeholder;Masukkan nominal;Enter amount
+withdraw_savings;Tarik Tabungan;Withdraw Savings
+available_balance_label;Saldo Tersedia;Available Balance
+withdraw_amount_label;Jumlah Penarikan;Withdraw Amount
+google_sheets_sync_label;Sinkronisasi Google Sheets;Google Sheets Sync
+google_sheets_sync_desc;Hubungkan akun Google dan sinkronkan data transaksi ke Spreadsheet.;Connect Google account and sync transaction data to Spreadsheet.
+transaction_categories_label;Kategori Transaksi;Transaction Categories
+transaction_categories_desc;Kelola nama, warna, dan ikon kategori pengeluaran & pemasukan.;Manage names, colors, and icons of expense & income categories.
+localization_display_label;Lokalisasi & Tampilan;Localization & Display
+localization_display_desc;Atur mata uang bawaan dan bahasa yang digunakan di aplikasi.;Set default currency and system language used in the app.
+backup_database_label;Backup & Database;Backup & Database
+backup_database_desc;Ekspor atau impor data lokal JSON, dan bersihkan database Anda.;Export or import local JSON data, and clean your database.
+back_to_settings;Kembali ke Pengaturan;Back to Settings
+open_spreadsheet;Buka Spreadsheet;Open Spreadsheet
+all_label;Semua;All
+alert_save_general_failed;Gagal menyimpan:;Failed to save:
+alert_delete_general_failed;Gagal menghapus:;Failed to delete:
+add_expense_category_alert;Tambahkan kategori bertipe pengeluaran terlebih dahulu!;Please add an expense category first!
+portfolio_label;Portofolio;Portfolio
+dca_calculator_label;Kalkulator DCA;DCA Calculator
+history_label;Riwayat;History
+alert_investment_account_required;"Harap tambahkan rekening bertipe ""Investasi"" terlebih dahulu di menu Rekening!";"Please add an account of type ""Investment"" first in the Accounts page!"
+rdn_cash_balance_label;Saldo Cash RDN;RDN Cash Balance
+view_layout_label;Tata Letak Tampilan:;View layout:
+asset_groups_label;Kelompok Aset;Asset Groups
+broker_groups_label;Kelompok Broker / RDN;Broker / RDN Groups
+local_stock_allocation;Alokasi Saham Lokal;Local Stock Allocation
+us_stock_allocation;Alokasi Saham AS (US);US Stock Allocation
+crypto_allocation_label;Alokasi Kepemilikan Kripto;Crypto Ownership Allocation
+no_local_stocks;Belum ada saham lokal.;No local stocks.
+local_stock_portfolio;Portofolio Saham Lokal;Local Stock Portfolio
+total_value_label;Total Nilai;Total Value
+company_name_label;Nama Saham;Company Name
+capital_label;Nilai Modal;Capital
+market_value_label;Nilai Market;Market Value
+transact_label;Aksi;Action
+buy_label;Beli;Buy
+sell_label;Jual;Sell
+edit_label;Edit;Edit
+no_local_stocks_registered;Belum ada kepemilikan saham lokal.;No local stocks registered.
+us_stock_portfolio;Portofolio Saham AS (US Stock);US Stock Portfolio
+no_crypto_registered;Belum ada kepemilikan kripto terekam.;No crypto holdings recorded yet.
+rdn_cash_balance_caps;SALDO CASH RDN;RDN CASH BALANCE
+assets_value_label;Nilai Aset;Assets Value
+total_assets_cash_label;Total (Aset + Cash);Total (Assets + Cash)
+no_broker_holdings;Belum ada kepemilikan aset di Broker ini.;No asset holdings in this Broker.
+asset_name_label;Nama Aset;Asset Name
+type_label;Tipe;Type
+stock_badge;Saham;Stock
+crypto_badge;Kripto;Crypto
+add_investment_account_first;Silakan tambahkan Rekening Investasi terlebih dahulu.;Please add an Investment Account first.
+dca_simulation_title;Simulasi Turunkan Average (DCA);Average Down Simulation (DCA)
+pick_from_portfolio_label;Pilih Aset dari Portofolio (Opsional);Pick from Portfolio (Optional)
+fill_manually_opt;— Isi manual / pilih aset —;— Fill manually / pick asset —
+stocks_optgroup;📈 Saham;📈 Stocks
+or_fill_manually;atau isi manual;or fill manually
+ticker_symbol_label;Kode / Simbol Aset;Ticker / Symbol
+lot_unit_checkbox;Gunakan Satuan Lot (1 Lot = 100 Lembar Saham);Use Lot Unit (1 Lot = 100 Shares)
+current_avg_price_label;Harga Rata-Rata Saat Ini;Current Average Price
+current_shares_label;Jumlah Kepemilikan;Current Shares
+new_purchase_price_label;Harga Pembelian Baru;New Purchase Price
+new_shares_label;Jumlah Pembelian Baru;New Shares
+simulation_result_title;Hasil Simulasi Average Baru;Simulation Result
+new_avg_price_label;Estimasi Harga Rata-Rata Baru;New Estimated Average Price
+from_initial_avg;dari average awal;from initial average
+new_total_qty_label;Total Kepemilikan Baru;New Total Quantity
+new_purchase_cost_label;Modal Pembelian Baru;New Purchase Cost
+fill_simulation_form;Masukkan seluruh nilai pada form simulasi untuk melihat hasil.;Fill in the simulation form to calculate results.
+inv_history_title;Riwayat Transaksi Jual & Beli Investasi;Investment Buy & Sell History
+date_label_cap;Tanggal;Date
+total_cash_label;Total Nilai;Total Cash
+rdn_payer_label;Akun RDN/Pembayar;RDN Account
+confirm_delete_inv_tx;Hapus catatan transaksi ini?;Delete this transaction log?
+no_inv_transactions;Belum ada transaksi terekam.;No transactions recorded yet.
+buy_stock_label;Beli Saham;Buy Stock
+buy_crypto_label;Beli Kripto;Buy Crypto
+sell_stock_label;Jual Saham;Sell Stock
+sell_crypto_label;Jual Kripto;Sell Crypto
+rdn_cash_account_label;Akun Pembayar / RDN;RDN Cash Account
+choose_rdn_account;-- Pilih Akun RDN --;-- Choose RDN Account --
+us_stock_checkbox;Saham AS (US Stock / USD);US Stock (USD)
+usd_crypto_checkbox;Mata Uang USD (Crypto / USD);USD Currency (Crypto / USD)
+quantity_unit_label;Jumlah (Unit);Quantity (Unit)
+quantity_lot_label;Jumlah (Lot);Quantity (Lot)
+price_per_share_label;Harga per Share/Unit;Price per Share/Unit
+tx_date_label;Tanggal Transaksi;Transaction Date
+edit_investment_asset;Edit Aset Investasi;Edit Investment Asset
+broker_account_label;Akun Broker;Broker Account
+currency_label;Mata Uang;Currency
+avg_buy_price_label;Harga Rata-Rata Beli;Average Buy Price
+current_price_label;Harga Sekarang;Current Price
+alert_inv_fill_all;Isi semua field transaksi!;Please fill in all transaction fields!
+alert_insufficient_stock;Saldo kepemilikan saham tidak mencukupi untuk dijual!;Insufficient stock holdings to sell!
+alert_insufficient_crypto;Saldo kepemilikan kripto tidak mencukupi untuk dijual!;Insufficient crypto holdings to sell!
+alert_inv_tx_saved;Transaksi investasi berhasil disimpan!;Investment transaction saved successfully!
+alert_inv_tx_failed;Gagal memproses transaksi:;Failed to process transaction:
+alert_inv_asset_updated;Aset investasi berhasil diperbarui!;Investment asset updated successfully!
+alert_inv_asset_update_failed;Gagal mengupdate aset: ;Failed to update asset: 
+buy_stock_desc;Beli Saham;Buy Stock
+buy_crypto_desc;Beli Kripto;Buy Crypto
+sell_stock_desc;Jual Saham;Sell Stock
+sell_crypto_desc;Jual Kripto;Sell Crypto
+lot_unit;Lot;Lot
+unit_label;Unit;Unit
+shares_label;Lembar;Shares
+symbol;Simbol;Symbol
+buy_prefix;Beli;Buy
+sell_prefix;Jual;Sell
+buy_caps_label;BELI;BUY
+sell_caps_label;JUAL;SELL
+dca_current_holdings_label;Jumlah Kepemilikan;Current Shares
+dca_new_purchase_label;Jumlah Pembelian Baru;New Purchase
+dca_disclaimer;* DCA (Dollar Cost Averaging) membantu Anda mengidentifikasi rata-rata harga beli saat melakukan akumulasi aset di harga bawah (average down) guna mempercepat balik modal (break-even point).;* DCA (Dollar Cost Averaging) helps you identify the average purchase price when accumulating assets at lower prices (average down) to accelerate the break-even point.
+crypto_optgroup;₿ Crypto;₿ Crypto
+google_finance_label;Google Finance;Google Finance
+bill_paid_label;Sudah Terbayar;Paid
+bill_total_month;Total Tagihan Bulan Ini;Total Bills This Month
+bill_paid_status;Sudah Terbayar;Already Paid
+bill_unpaid_status;Belum Terbayar;Unpaid
+bill_chart_title;Akumulasi Pembayaran Tagihan Bulan Ini;Accumulated Bill Payments This Month
+bill_chart_desc;Tren pembayaran terakumulasi harian menuju target total tagihan.;Daily accumulated payment trend towards target total bills.
+bill_list_title;Daftar Tagihan & Subskripsi;List of Bills & Subscriptions
+edit_bill_title;Edit Tagihan;Edit Bill
+edit_bill_modal_title;Edit Tagihan Rutin;Edit Recurring Bill
+target_label;Target;Target
+paid_label;Terbayar;Paid
+saving_chart_title;Akumulasi Pertumbuhan Tabungan Bulan Ini;Accumulated Savings Growth This Month
+saving_chart_desc;Tren pertumbuhan tabungan terakumulasi harian menuju total target.;Daily accumulated savings growth trend towards total target.
+saving_accumulated_label;Terkumpul;Saved
+edit_saving_goal_title;Edit Target Tabungan;Edit Saving Goal
+sankey_title;Diagram Aliran Arus Kas (Sankey);Cash Flow Stream Diagram (Sankey)
+sankey_desc;Visualisasi aliran pendapatan kotor terbagi menjadi sisa kas bersih dan rincian alokasi pengeluaran kategori.;Visualization of gross income splitting into net savings and detailed category expense allocation.
+gross_income_label;Pemasukan Kotor;Gross Income
+net_savings_label;Kas Bersih (Tabungan);Net Savings
+total_expenses_label;Total Pengeluaran;Total Expenses
+no_sankey_data;Belum ada data aliran kas untuk bulan ini.;No cash flow stream data for this month.
+stock_portfolio_subtitle;Saham Lokal (IDX) & Saham AS (US Stock);Local Stocks (IDX) & US Stocks
+refresh_stocks;Perbarui Harga Market Saham;Refresh Stocks Market Price
+crypto_portfolio_subtitle;Aset Kripto Lokal (IDR) & Kripto Global (USD);Local Crypto (IDR) & Global Crypto (USD)
+refresh_crypto;Perbarui Harga Market Kripto;Refresh Crypto Market Price
+stock_prices_updated;Harga aset saham berhasil diperbarui!;Stock asset prices updated successfully!
+crypto_prices_updated;Harga aset kripto berhasil diperbarui!;Crypto asset prices updated successfully!
+stock_refresh_failed;Gagal mengambil harga saham terbaru:;Failed to fetch latest stock prices:
+crypto_refresh_failed;Gagal mengambil harga kripto terbaru:;Failed to fetch latest crypto prices:
+local_crypto_portfolio;Portofolio Kripto Lokal (IDR);Local Crypto Portfolio (IDR)
+usd_crypto_portfolio;Portofolio Kripto USD;USD Crypto Portfolio
+choose_rdn_account;Pilih rekening RDN / penampung...;Choose RDN / funding account...
+symbol_placeholder;Contoh: BBRI, BTC;e.g. BBRI, BTC
+fetching_name;Mencari nama...;Fetching name...
+stock_name_placeholder;Contoh: Bank Central Asia;e.g. Bank Central Asia
+crypto_name_placeholder;Contoh: Bitcoin;e.g. Bitcoin
+quantity_placeholder;Contoh: 10;e.g. 10
+price_placeholder;Contoh: 2870;e.g. 2870
+year_label;Tahun:;Year:
+pdf_report;Laporan PDF;PDF Report
+annual_dashboard_subtitle;Ringkasan keuangan, kekayaan bersih, dan aliran kas tahunan Anda.;Your annual financial overview, net worth, and cash flow summary.
+annual_sankey_title;Aliran Arus Kas Tahunan;Annual Cash Flow Diagram
+annual_sankey_desc;Visualisasi pembagian pemasukan kotor, tabungan, investasi, biaya, dan pengeluaran tahunan.;Visualization of your annual gross income, savings, investments, fees, and expenses.
+annual_ledger_title;Laporan Detil Alokasi & Anggaran Tahunan;Annual Budget & Asset Allocation Ledger
+category_spending_summary;Ringkasan Pengeluaran Kategori;Category Spending Summary
+end_of_year_asset_allocation;Rincian Alokasi Aset Akhir Tahun;End-of-Year Asset Allocation
+asset_type_label;Jenis Aset;Asset Type
+nominal_value_label;Nilai Nominal;Nominal Value
+portion_label;Porsi;Portion
+active_this_year;Aktif Tahun Ini;Active This Year
+alert_account_not_found;Rekening tidak ditemukan!;Account not found!
+alert_insufficient_rdn_balance;Saldo RDN tidak mencukupi untuk melakukan pembelian! Saldo saat ini: {balance}, dibutuhkan: {required};Insufficient RDN balance to complete purchase! Current balance: {balance}, required: {required}
+this_month;Bulan Ini;This Month
+this_year;Tahun Ini;This Year
+net_worth_label;Kekayaan Bersih;Net Worth
+net_worth_allocation;Alokasi Kekayaan Bersih;Net Worth Allocation
+net_worth_sankey_desc;Visualisasi pembagian aset, tabungan, portofolio saham/crypto, serta kewajiban Anda.;Visualization of your assets, savings, stock/crypto portfolios, and liabilities.
+year_report_subtitle;Tahun;Year
+budget_no_data;Tidak ada data anggaran tahun ini.;No budget data for this year.
+cash_and_rdn;Uang Tunai / Kas;Cash & RDN
+stocks_portfolio_label;Saham Portofolio;Stocks Portfolio
+crypto_portfolio_label;Kripto Portofolio;Crypto Portfolio
+report_footer_notice;Laporan ini dihasilkan oleh Sumavis Finance Tracker.;Generated by Sumavis Finance Tracker.
+actual_label;Realisasi;Actual
+;;
+# ===== PRIVACY POLICY =====;;
+pp_title;Kebijakan Privasi;Privacy Policy
+pp_last_updated;Terakhir Diperbarui: 30 Juni 2026;Last Updated: June 30, 2026
+pp_intro;Selamat datang di SUMAVIS. Kami menghargai privasi Anda dan berkomitmen untuk melindungi data keuangan dan pribadi Anda. Kebijakan Privasi ini menjelaskan bagaimana aplikasi kami beroperasi dan bagaimana kami menangani data Anda.;Welcome to SUMAVIS. We value your privacy and are committed to protecting your financial and personal data. This Privacy Policy explains how our application operates and how we handle your data.
+pp_s1_title;1. Penyimpanan Data & Arsitektur Local-First;1. Data Storage & Local First Architecture
+pp_s1_body;SUMAVIS adalah aplikasi pelacak keuangan berbasis local-first. Semua transaksi keuangan, rekening, anggaran, dan target tabungan yang Anda masukkan disimpan langsung di perangkat lokal Anda menggunakan database bawaan browser (IndexedDB via Dexie). Kami tidak meng-hosting data keuangan Anda di server database kami.;SUMAVIS is a local-first financial tracker app. All financial transactions, accounts, budgets, and savings goals that you input are stored directly on your local device using the browser's database (IndexedDB via Dexie). We do not host your financial data on our own database servers.
+pp_s2_title;2. Google OAuth & Sinkronisasi Google Sheets;2. Google OAuth & Google Sheets Sync
+pp_s2_body1;Jika Anda mengaktifkan fitur Sinkronisasi Google Sheets, SUMAVIS akan meminta otorisasi akses ke Google Drive Anda untuk membuat dan memperbarui spreadsheet tertentu. Integrasi Google OAuth ini semata-mata untuk menyinkronkan database lokal Anda dengan Google Sheets pribadi Anda.;If you enable the Google Sheets Sync feature, SUMAVIS will ask you to authorize access to your Google Drive to create and update a specific spreadsheet. This Google OAuth integration serves solely to synchronize your local database with your personal, private Google Sheets.
+pp_s2_body2;Kami hanya meminta izin minimum yang diperlukan untuk menulis dan membaca spreadsheet SUMAVIS Anda:;We only request the minimum permissions required to write and read your SUMAVIS spreadsheet:
+pp_s2_li1;Kami tidak membaca atau memodifikasi file lain di Google Drive Anda.;We do not read or modify other files on your Google Drive.
+pp_s2_li2;Kami tidak menyimpan atau mengirimkan token akses Google atau spreadsheet Anda ke server eksternal manapun. Semua permintaan API ke endpoint Google dibuat langsung dari browser klien Anda.;We do not store or transmit your Google access tokens or spreadsheets to any external server. All API requests to Google's endpoints are made directly from your browser client.
+pp_s3_title;3. Layanan Pihak Ketiga;3. Third-Party Services
+pp_s3_body;SUMAVIS sepenuhnya bebas dari pelacak pihak ketiga, mesin analitik, dan SDK iklan. Aktivitas dan detail keuangan Anda tetap privat untuk Anda.;SUMAVIS is completely free of third-party tracking, analytics engines, and advertising SDKs. Your actions and financial details remain private to you.
+pp_s4_title;4. Perubahan Kebijakan Ini;4. Changes to This Policy
+pp_s4_body;Kami dapat memperbarui Kebijakan Privasi kami dari waktu ke waktu. Kami akan memberi tahu Anda tentang perubahan apa pun dengan memposting Kebijakan Privasi baru di halaman ini.;We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+pp_s5_title;5. Hubungi Kami;5. Contact Us
+pp_s5_body;Jika Anda memiliki pertanyaan atau saran tentang Kebijakan Privasi kami, jangan ragu untuk menghubungi kami di:;If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
+;;
+# ===== TERMS OF SERVICE =====;;
+tos_title;Ketentuan Layanan;Terms of Service
+tos_last_updated;Terakhir Diperbarui: 30 Juni 2026;Last Updated: June 30, 2026
+tos_intro;Selamat datang di SUMAVIS. Dengan mengakses atau menggunakan aplikasi kami, Anda setuju untuk mematuhi dan terikat oleh syarat dan ketentuan berikut. Harap baca Ketentuan Layanan ini dengan seksama.;Welcome to SUMAVIS. By accessing or using our application, you agree to comply with and be bound by the following terms and conditions. Please read these Terms of Service carefully.
+tos_s1_title;1. Penerimaan Ketentuan;1. Acceptance of Terms
+tos_s1_body;Dengan menggunakan SUMAVIS, Anda menyatakan persetujuan terhadap ketentuan ini. Jika Anda tidak setuju dengan semua ketentuan ini, jangan gunakan aplikasi ini.;By using SUMAVIS, you signify your assent to these terms. If you do not agree to all of these terms, do not use this application.
+tos_s2_title;2. Penggunaan Lisensi & Sinkronisasi Lokal;2. Use of License & Local Syncing
+tos_s2_body1;SUMAVIS memberikan Anda lisensi pribadi, non-eksklusif, tidak dapat dipindahtangankan, dan dapat dibatalkan untuk menggunakan aplikasi ini. Aplikasi ini mencakup fitur yang memungkinkan Anda menyinkronkan data menggunakan akun Google Drive dan Google Sheets Anda sendiri.;SUMAVIS grants you a personal, non-exclusive, non-transferable, revocable license to use the application. The application includes features that let you sync data using your own Google Drive and Google Sheets accounts.
+tos_s2_body2;Anda sepenuhnya bertanggung jawab atas:;You are entirely responsible for:
+tos_s2_li1;Menjaga keamanan akun Google dan kredensial Anda.;Maintaining the security of your Google account and credentials.
+tos_s2_li2;Data apa pun yang disinkronkan atau disimpan di Google Sheets pribadi atau secara lokal di browser Anda.;Any data synchronized or stored in your personal Google Sheets or locally in your browser.
+tos_s2_li3;Memastikan penggunaan Google API Anda mematuhi ketentuan layanan Google sendiri.;Ensuring that your use of Google APIs complies with Google's own terms of service.
+tos_s3_title;3. Penolakan Jaminan;3. Disclaimer of Warranties
+tos_s3_body;"SUMAVIS disediakan ""sebagaimana adanya"" dan ""sebagaimana tersedia"" tanpa jaminan apa pun, baik tersurat maupun tersirat, termasuk namun tidak terbatas pada jaminan tersirat tentang kelayakan dagang, kesesuaian untuk tujuan tertentu, atau non-pelanggaran. Kami tidak menjamin bahwa aplikasi akan tidak terputus, aman, atau bebas kesalahan.";"SUMAVIS is provided ""as is"" and ""as available"" without any warranties of any kind, either express or implied, including but not limited to the implied warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the application will be uninterrupted, secure, or error-free."
+tos_s4_title;4. Batasan Tanggung Jawab;4. Limitation of Liability
+tos_s4_body;Dalam hal apapun, SUMAVIS, pengembang, atau kontributornya tidak bertanggung jawab atas kerugian langsung, tidak langsung, insidental, khusus, atau konsekuensial (termasuk namun tidak terbatas pada kehilangan data, kehilangan keuntungan, atau gangguan bisnis) yang disebabkan oleh penggunaan perangkat lunak ini.;In no event shall SUMAVIS, its developers, or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, loss of data, loss of profits, or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort arising in any way out of the use of this software.
+tos_s5_title;5. Hubungi Kami;5. Contact Us
+tos_s5_body;Jika Anda memiliki pertanyaan tentang Ketentuan Layanan ini, silakan hubungi kami di:;If you have any questions about these Terms of Service, please contact us at:
+;;
+# ===== DOCUMENTATION =====;;
+doc_page_title;Dokumentasi SUMAVIS;SUMAVIS Documentation
+doc_page_subtitle;Versi 1.0.0 · Terakhir diperbarui: Juli 2026;Version 1.0.0 · Last updated: July 2026
+doc_page_intro;Selamat datang di dokumentasi resmi SUMAVIS — aplikasi pencatat keuangan pribadi modern berbasis local-first. Panduan ini mencakup seluruh fitur aplikasi, mulai dari pencatatan transaksi harian hingga manajemen portofolio investasi dan sinkronisasi cloud.;Welcome to the official SUMAVIS documentation — a modern local-first personal finance tracker. This guide covers all application features, from daily transaction recording to investment portfolio management and cloud synchronization.
+doc_toc_label;Daftar Isi;Table of Contents
+doc_toc_intro;Pengenalan SUMAVIS;Introduction to SUMAVIS
+doc_toc_dashboard;Dashboard;Dashboard
+doc_toc_transactions;Transaksi;Transactions
+doc_toc_accounts;Rekening & Akun;Accounts & Wallets
+doc_toc_investments;Investasi;Investments
+doc_toc_budgets;Anggaran;Budgets
+doc_toc_bills;Tagihan Rutin;Recurring Bills
+doc_toc_saving_goals;Target Tabungan;Saving Goals
+doc_toc_settings;Pengaturan;Settings
+doc_toc_sync;Sinkronisasi Google Sheets;Google Sheets Sync
+doc_toc_privacy;Privasi & Keamanan Data;Privacy & Data Security
+doc_toc_import_export;Import & Export Data;Import & Export Data
+doc_intro_p1;SUMAVIS (Sistem Manajemen Keuangan Pribadi) adalah aplikasi web pencatat keuangan yang dirancang untuk membantu Anda mengelola arus kas, rekening, investasi, dan target finansial dengan cara yang intuitif, aman, dan modern.;SUMAVIS (Personal Finance Management System) is a web-based finance tracker designed to help you manage cash flow, accounts, investments, and financial goals in an intuitive, secure, and modern way.
+doc_intro_p2;SUMAVIS menggunakan arsitektur local-first, artinya seluruh data Anda tersimpan di perangkat Anda sendiri melalui IndexedDB (teknologi database bawaan browser). Tidak ada server pihak ketiga yang menyimpan data finansial Anda.;SUMAVIS uses a local-first architecture, meaning all your data is stored on your own device via IndexedDB (the browser's built-in database technology). No third-party servers store your financial data.
+doc_feat_local_title;Data 100% Lokal;100% Local Data
+doc_feat_local_desc;Semua transaksi & rekening tersimpan di perangkat Anda, bukan di server kami.;All transactions & accounts are stored on your device, not on our servers.
+doc_feat_sync_title;Sinkronisasi Opsional;Optional Sync
+doc_feat_sync_desc;Backup & sync ke Google Sheets pribadi Anda kapan saja.;Backup & sync to your personal Google Sheets anytime.
+doc_feat_multicur_title;Multi-Mata Uang;Multi-Currency
+doc_feat_multicur_desc;Dukung IDR, USD, dan nilai tukar real-time dari Google Finance.;Supports IDR, USD, and real-time exchange rates from Google Finance.
+doc_feat_multiplatform_title;Multi-Platform;Multi-Platform
+doc_feat_multiplatform_desc;Dapat diakses di browser desktop maupun mobile.;Accessible on both desktop and mobile browsers.
+doc_dashboard_intro;Dashboard adalah halaman utama SUMAVIS. Semua ringkasan keuangan bulan berjalan ditampilkan di sini secara real-time.;The Dashboard is SUMAVIS's main page. All current month financial summaries are displayed here in real-time.
+doc_dashboard_components_title;Komponen Dashboard;Dashboard Components
+doc_dashboard_comp1_name;Total Kekayaan Bersih (Net Worth);Net Worth
+doc_dashboard_comp1_desc;Jumlah total saldo semua akun aset dikurangi utang/liabilitas, termasuk nilai portofolio investasi.;Total balance of all asset accounts minus debts/liabilities, including investment portfolio value.
+doc_dashboard_comp2_name;Ringkasan Bulan;Monthly Summary
+doc_dashboard_comp2_desc;Pemasukan, pengeluaran, dan selisih bersih untuk bulan yang dipilih.;Income, expenses, and net difference for the selected month.
+doc_dashboard_comp3_name;Grafik Arus Kas;Cash Flow Chart
+doc_dashboard_comp3_desc;Perbandingan visual pemasukan vs pengeluaran per bulan dalam tahun berjalan.;Visual comparison of income vs expenses per month in the current year.
+doc_dashboard_comp4_name;Diagram Sankey;Sankey Diagram
+doc_dashboard_comp4_desc;Visualisasi aliran uang dari sumber penghasilan ke pengeluaran per kategori. Tersedia mode Bulanan, Tahunan, dan Sepanjang Waktu.;Visualization of money flow from income sources to expenses per category. Available in Monthly, Yearly, and All-Time modes.
+doc_dashboard_comp5_name;Diagram Pengeluaran;Expense Pie Chart
+doc_dashboard_comp5_desc;Distribusi pengeluaran per kategori dalam bulan yang dipilih.;Distribution of expenses by category in the selected month.
+doc_dashboard_comp6_name;Ringkasan Anggaran;Budget Summary
+doc_dashboard_comp6_desc;Progress anggaran per kategori terhadap realisasi pengeluaran bulan ini.;Budget progress per category against actual spending this month.
+doc_dashboard_comp7_name;Transaksi Terakhir;Recent Transactions
+doc_dashboard_comp7_desc;5 transaksi terbaru untuk memantau aktivitas keuangan.;Last 5 transactions to monitor financial activity.
+doc_dashboard_comp8_name;Laporan Tahunan;Annual Report
+doc_dashboard_comp8_desc;Tabel ringkasan 12 bulan: Total Masuk, Total Keluar, Net Cashflow, dan Pengeluaran per Kategori.;12-month summary table: Total Income, Total Expense, Net Cashflow, and Expense per Category.
+doc_dashboard_month_title;Pemilih Bulan;Month Selector
+doc_dashboard_month_desc;Gunakan kontrol Pemilih Bulan di pojok kanan atas untuk berpindah antar bulan historis. Saldo rekening, transaksi, dan seluruh grafik akan dikalibrasi ulang secara dinamis mengikuti bulan yang dipilih.;Use the Month Selector control in the top right corner to navigate between historical months. Account balances, transactions, and all charts will dynamically recalibrate to the selected month.
+doc_dashboard_tip1;"Centang opsi ""Sertakan Liabilitas"" untuk menyertakan utang kartu kredit dalam kalkulasi Net Worth. Centang ""Sertakan Floating P&L"" untuk menyertakan keuntungan/kerugian investasi yang belum direalisasikan.";"Check ""Include Liabilities"" to include credit card debt in Net Worth calculations. Check ""Include Floating P&L"" to include unrealized investment gains/losses."
+doc_dashboard_rates_title;Kurs Mata Uang Real-Time;Real-Time Exchange Rates
+doc_dashboard_rates_desc;SUMAVIS secara otomatis mengambil nilai tukar dari Google Finance. Klik tombol Refresh di samping badge kurs untuk memperbarui nilai tukar setiap saat.;SUMAVIS automatically fetches exchange rates from Google Finance. Click the Refresh button next to the rate badge to update exchange rates at any time.
+doc_dashboard_print_title;Cetak PDF;Print to PDF
+doc_dashboard_print_desc;Klik tombol Printer di pojok kanan atas Dashboard untuk mencetak laporan keuangan bulan berjalan dalam format PDF yang siap cetak.;Click the Printer button in the top right corner of the Dashboard to print the current month's financial report in a print-ready PDF format.
+doc_tx_intro;Halaman Transaksi adalah jantung SUMAVIS. Di sini Anda dapat mencatat, mengedit, mencari, dan memfilter seluruh aktivitas keuangan Anda.;The Transactions page is the heart of SUMAVIS. Here you can record, edit, search, and filter all your financial activities.
+doc_tx_types_title;Jenis Transaksi;Transaction Types
+doc_tx_type_spending;Pengeluaran;Spending
+doc_tx_type_spending_desc;Uang keluar dari rekening untuk belanja, makan, tagihan, dll.;Money leaving an account for shopping, food, bills, etc.
+doc_tx_type_income;Pemasukan;Income
+doc_tx_type_income_desc;Uang masuk ke rekening: gaji, freelance, dividen, dll.;Money received into an account: salary, freelance, dividends, etc.
+doc_tx_type_transfer;Transfer;Transfer
+doc_tx_type_transfer_desc;Perpindahan saldo antar rekening Anda sendiri (misal: BCA ke Tabungan).;Movement of funds between your own accounts (e.g., BCA to Savings).
+doc_tx_fields_title;Field Transaksi;Transaction Fields
+doc_tx_field_date;Tanggal;Date
+doc_tx_field_date_desc;Tanggal kejadian transaksi (format YYYY-MM-DD).;Transaction date (YYYY-MM-DD format).
+doc_tx_field_amount;Jumlah;Amount
+doc_tx_field_amount_desc;Nominal transaksi dalam mata uang dasar aplikasi.;Transaction amount in the application's base currency.
+doc_tx_field_desc;Deskripsi;Description
+doc_tx_field_desc_desc;Catatan singkat transaksi (nama toko, keterangan, dll.).;Short transaction note (store name, description, etc.).
+doc_tx_field_account;Rekening Asal / Tujuan;Source / Destination Account
+doc_tx_field_account_desc;Rekening mana yang terdebit/terkredit.;Which account is debited/credited.
+doc_tx_field_category;Kategori;Category
+doc_tx_field_category_desc;Klasifikasi transaksi (Makanan, Transportasi, dll.).;Transaction classification (Food, Transportation, etc.).
+doc_tx_field_tags;Tags;Tags
+doc_tx_field_tags_desc;Label bebas yang dapat dicari, pisahkan dengan koma.;Searchable free-form labels, separated by commas.
+doc_tx_field_fee;Biaya Admin (Fee);Admin Fee
+doc_tx_field_fee_desc;Biaya transaksi bank/broker opsional.;Optional bank/broker transaction fee.
+doc_tx_field_tax;Pajak (Tax);Tax
+doc_tx_field_tax_desc;Pajak opsional yang terkait dengan transaksi.;Optional tax associated with the transaction.
+doc_tx_filter_title;Filter & Pencarian;Filter & Search
+doc_tx_filter_li1;Filter berdasarkan jenis (Pengeluaran/Pemasukan/Transfer).;Filter by type (Spending/Income/Transfer).
+doc_tx_filter_li2;Filter berdasarkan kategori.;Filter by category.
+doc_tx_filter_li3;Filter berdasarkan rekening asal/tujuan.;Filter by source/destination account.
+doc_tx_filter_li4;Cari berdasarkan deskripsi atau tag secara real-time.;Search by description or tags in real-time.
+doc_tx_filter_li5;Semua filter dapat dikombinasikan.;All filters can be combined.
+doc_tx_tip1;"Gunakan tag seperti ""liburan,hotel"" untuk mengelompokkan transaksi terkait perjalanan, lalu cari kata kunci ""liburan"" di kolom pencarian.";"Use tags like ""vacation,hotel"" to group travel-related transactions, then search ""vacation"" in the search box."
+doc_acc_intro;Rekening adalah representasi digital dari semua sumber/tujuan keuangan Anda: rekening bank, dompet tunai, kartu kredit, broker investasi, dll.;Accounts are the digital representation of all your financial sources/destinations: bank accounts, cash wallets, credit cards, investment brokers, etc.
+doc_acc_types_title;Tipe Rekening;Account Types
+doc_acc_type_asset;Aset (asset);Asset (asset)
+doc_acc_type_asset_desc;Rekening bank (BCA, Mandiri), dompet tunai, tabungan, dll. Saldo bertambah saat ada pemasukan/transfer masuk.;Bank accounts (BCA, Mandiri), cash wallets, savings, etc. Balance increases with income/transfers in.
+doc_acc_type_liability;Liabilitas (liability);Liability (liability)
+doc_acc_type_liability_desc;Kartu kredit, pinjaman. Saldo merepresentasikan utang yang harus dibayar.;Credit cards, loans. Balance represents debt that needs to be paid.
+doc_acc_type_invest;Investasi (investment);Investment (investment)
+doc_acc_type_invest_desc;Rekening broker atau kas RDN untuk investasi saham dan crypto.;Broker account or RDN cash for stock and crypto investments.
+doc_acc_type_revenue;Pendapatan (revenue);Revenue (revenue)
+doc_acc_type_revenue_desc;Sumber penghasilan virtual (Gaji Kantor, Freelance). Digunakan sebagai rekening sumber untuk transaksi pemasukan.;Virtual income sources (Office Salary, Freelance). Used as source account for income transactions.
+doc_acc_type_expense;Pengeluaran (expense);Expense (expense)
+doc_acc_type_expense_desc;Pos pengeluaran virtual. Digunakan sebagai rekening tujuan untuk transaksi pengeluaran.;Virtual expense account. Used as destination account for spending transactions.
+doc_acc_multicur_title;Multi-Mata Uang;Multi-Currency
+doc_acc_multicur_desc;Setiap rekening dapat dikonfigurasi dengan mata uang berbeda (IDR atau USD). Saldo rekening USD akan dikonversi secara otomatis ke mata uang dasar menggunakan kurs real-time Google Finance.;Each account can be configured with a different currency (IDR or USD). USD account balances are automatically converted to the base currency using real-time Google Finance rates.
+doc_acc_note1;Rekening dengan tipe Pendapatan dan Pengeluaran berfungsi sebagai akun pembukuan virtual untuk keperluan klasifikasi. Saldo mereka tidak perlu dimonitor secara langsung.;Accounts with Revenue and Expense types function as virtual bookkeeping accounts for classification purposes. Their balances do not need to be monitored directly.
+doc_acc_reconstruct_title;Rekonstruksi Saldo Historis;Historical Balance Reconstruction
+doc_acc_reconstruct_desc;SUMAVIS secara otomatis menghitung ulang (merekonstruksi) saldo setiap rekening untuk bulan yang Anda pilih di Pemilih Bulan — tanpa mengubah data apapun. Fitur ini memungkinkan Anda melihat snapshot keuangan bulan lalu secara akurat.;SUMAVIS automatically recalculates (reconstructs) each account's balance for the month you select in the Month Selector — without changing any data. This feature lets you accurately view a financial snapshot of past months.
+doc_inv_intro;Modul Investasi memungkinkan Anda melacak portofolio saham dan aset kripto dari berbagai broker/exchange dalam satu tampilan terpadu.;The Investment module allows you to track stock and crypto asset portfolios from multiple brokers/exchanges in a unified view.
+doc_inv_assets_title;Jenis Aset yang Didukung;Supported Asset Types
+doc_inv_stocks_title;Saham (Stocks);Stocks
+doc_inv_stocks_li1;Saham IDR lokal (contoh: BBCA, BBRI, TLKM);Local IDR stocks (e.g., BBCA, BBRI, TLKM)
+doc_inv_stocks_li2;Saham USD AS (contoh: AAPL, MSFT, NVDA);US USD stocks (e.g., AAPL, MSFT, NVDA)
+doc_inv_stocks_li3;Ticker 4 karakter untuk saham IDR;4-character ticker for IDR stocks
+doc_inv_crypto_title;Kripto (Crypto);Crypto
+doc_inv_crypto_li1;Crypto IDR (Indodax: BTC, ETH, dll.);IDR Crypto (Indodax: BTC, ETH, etc.)
+doc_inv_crypto_li2;Crypto USD (Binance: SOL, BNB, dll.);USD Crypto (Binance: SOL, BNB, etc.)
+doc_inv_crypto_li3;Harga beli rata-rata (average price);Average purchase price tracking
+doc_inv_summary_title;Ringkasan Portofolio;Portfolio Summary
+doc_inv_sum1_name;Total Nilai Investasi;Total Investment Value
+doc_inv_sum1_desc;Nilai pasar saat ini dari seluruh portofolio saham + crypto (harga terkini × jumlah unit).;Current market value of all stock + crypto portfolios (current price × quantity).
+doc_inv_sum2_name;Floating PnL;Floating PnL
+doc_inv_sum2_desc;Keuntungan/kerugian mengambang (unrealized) dari seluruh aset yang dimiliki.;Unrealized profit/loss from all held assets.
+doc_inv_sum3_name;Kas RDN;RDN Cash
+doc_inv_sum3_desc;Total saldo kas di akun broker yang belum diinvestasikan.;Total cash balance in broker accounts not yet invested.
+doc_inv_sum4_name;Total Aset Investasi;Total Investment Assets
+doc_inv_sum4_desc;Nilai Investasi + Kas RDN.;Investment Value + RDN Cash.
+doc_inv_buy_title;Mencatat Pembelian Aset;Recording Asset Purchases
+doc_inv_buy_step1;Pilih tab Beli (Saham atau Crypto).;Select the Buy tab (Stock or Crypto).
+doc_inv_buy_step2;Pilih rekening broker/RDN sebagai sumber kas.;Select the broker/RDN account as the cash source.
+doc_inv_buy_step3;Masukkan simbol aset, jumlah lot/unit, dan harga beli.;Enter the asset symbol, lot/unit quantity, and purchase price.
+doc_inv_buy_step4;Masukkan biaya transaksi broker (fee & tax) jika ada.;Enter broker transaction costs (fee & tax) if applicable.
+doc_inv_buy_step5;Klik Beli Sekarang. Sistem akan memverifikasi saldo RDN cukup sebelum memproses.;Click Buy Now. The system will verify sufficient RDN balance before processing.
+doc_inv_history_title;Histori Transaksi Investasi;Investment Transaction History
+doc_inv_history_desc;Setiap transaksi beli/jual dicatat lengkap di tab Histori beserta detail: simbol, jenis, tanggal, harga, jumlah, biaya, dan pajak.;Every buy/sell transaction is fully recorded in the History tab with details: symbol, type, date, price, quantity, fee, and tax.
+doc_inv_tip1;Saldo RDN (kas di broker) tidak boleh kosong saat melakukan pembelian. Lakukan transfer dari rekening bank Anda ke rekening broker terlebih dahulu melalui menu Transaksi → Transfer.;RDN balance (cash at broker) must not be empty when making a purchase. First transfer from your bank account to the broker account via the Transactions menu → Transfer.
+doc_inv_note1;"Harga terkini saham/crypto harus diperbarui manual di kolom ""Harga Terkini"" pada tab Portofolio untuk menghitung nilai pasar dan Floating PnL yang akurat.";"Current stock/crypto prices must be manually updated in the ""Current Price"" field on the Portfolio tab to calculate accurate market values and Floating PnL."
+doc_budget_intro;Fitur Anggaran membantu Anda merencanakan batas pengeluaran per kategori setiap bulan atau per tahun, sehingga Anda dapat mengendalikan pola belanja dengan lebih disiplin.;The Budget feature helps you plan spending limits per category each month or year, allowing you to control spending patterns more disciplinedly.
+doc_budget_create_title;Cara Membuat Anggaran;How to Create a Budget
+doc_budget_step1;"Klik tombol ""+ Tambah Anggaran"".";"Click the ""+ Add Budget"" button."
+doc_budget_step2;Pilih Kategori yang ingin dianggarkan (Makanan, Transportasi, dll.).;Select the Category to budget (Food, Transportation, etc.).
+doc_budget_step3;Tentukan Jumlah Anggaran dalam mata uang dasar.;Set the Budget Amount in the base currency.
+doc_budget_step4;Pilih Periode: Bulanan atau Tahunan.;Select the Period: Monthly or Yearly.
+doc_budget_step5;Simpan. Anggaran baru akan langsung tampil dengan progress bar.;Save. The new budget will immediately appear with a progress bar.
+doc_budget_status_title;Indikator Status Anggaran;Budget Status Indicators
+doc_budget_status_safe;Aman;Safe
+doc_budget_status_safe_desc;Pengeluaran kurang dari 80% dari anggaran.;Spending is less than 80% of budget.
+doc_budget_status_warning;Hampir Habis;Almost Full
+doc_budget_status_warning_desc;Pengeluaran antara 80–100% dari anggaran.;Spending is between 80–100% of budget.
+doc_budget_status_over;Terlampaui;Exceeded
+doc_budget_status_over_desc;Pengeluaran melebihi 100% dari anggaran.;Spending exceeds 100% of budget.
+doc_budget_tip1;Ringkasan progress anggaran juga ditampilkan di halaman Dashboard untuk memantau secara cepat tanpa harus berpindah halaman.;Budget progress summaries are also displayed on the Dashboard for quick monitoring without switching pages.
+doc_bills_intro;Fitur Tagihan Rutin (Bills) membantu Anda melacak dan mengingatkan semua pembayaran berulang: sewa, listrik, internet, langganan streaming, premi asuransi, dll.;The Recurring Bills feature helps you track and remind you of all recurring payments: rent, electricity, internet, streaming subscriptions, insurance premiums, etc.
+doc_bills_freq_title;Frekuensi Tagihan;Bill Frequency
+doc_bills_freq_weekly;Mingguan;Weekly
+doc_bills_freq_weekly_desc;Tagihan yang berulang setiap minggu.;Bills that recur every week.
+doc_bills_freq_monthly;Bulanan;Monthly
+doc_bills_freq_monthly_desc;Tagihan yang jatuh tempo setiap bulan (yang paling umum).;Bills due every month (the most common).
+doc_bills_freq_yearly;Tahunan;Yearly
+doc_bills_freq_yearly_desc;Tagihan tahunan seperti premi asuransi atau domain website.;Annual bills such as insurance premiums or website domains.
+doc_bills_features_title;Fitur Tagihan;Bill Features
+doc_bills_feat1;Tampilan status Jatuh Tempo Hari Ini, Mendatang, dan Terlewat.;Status display for Due Today, Upcoming, and Overdue bills.
+doc_bills_feat2;"Tombol ""Bayar Sekarang"" untuk langsung mencatat transaksi pembayaran dari rekening yang dipilih.";"A ""Pay Now"" button to directly record payment transactions from the selected account."
+doc_bills_feat3;Dukungan jumlah dalam USD dengan konversi otomatis ke IDR berdasarkan kurs.;USD amount support with automatic conversion to IDR based on exchange rates.
+doc_bills_feat4;Dukungan biaya admin dan pajak per tagihan.;Support for admin fee and tax per bill.
+doc_bills_feat5;Fitur Aktif/Nonaktif untuk menonaktifkan tagihan sementara tanpa menghapusnya.;Active/Inactive toggle to temporarily disable a bill without deleting it.
+doc_bills_note1;Setelah membayar tagihan, transaksi dicatat otomatis di halaman Transaksi. Tanggal jatuh tempo berikutnya akan dihitung otomatis berdasarkan frekuensi.;After paying a bill, the transaction is automatically recorded on the Transactions page. The next due date is automatically calculated based on the frequency.
+doc_saving_intro;Fitur Target Tabungan membantu Anda merencanakan dan melacak perkembangan tabungan untuk tujuan spesifik: liburan, dana darurat, beli gadget, biaya pernikahan, dll.;The Saving Goals feature helps you plan and track savings progress for specific goals: vacation, emergency fund, gadget purchase, wedding expenses, etc.
+doc_saving_create_title;Membuat Target Tabungan;Creating a Saving Goal
+doc_saving_step1;"Klik ""+ Tambah Target"".";"Click ""+ Add Goal""."
+doc_saving_step2;"Isi nama target (misal: ""Dana Darurat 6 Bulan"").";"Fill in the goal name (e.g., ""6-Month Emergency Fund"")."
+doc_saving_step3;Tentukan Jumlah Target (nominal yang ingin dicapai).;Set the Target Amount (the amount you want to reach).
+doc_saving_step4;Pilih Rekening Tabungan yang terhubung.;Select the linked Savings Account.
+doc_saving_step5;Tentukan Tanggal Target (kapan Anda ingin mencapainya).;Set the Target Date (when you want to achieve it).
+doc_saving_step6;Tambahkan catatan opsional.;Add optional notes.
+doc_saving_cicil_title;Cicilan Tabungan;Saving Installments
+doc_saving_cicil_desc;"Gunakan fitur ""+ Cicil"" untuk mencatat setoran tabungan ke target. Setiap cicilan akan dicatat sebagai transaksi transfer dari rekening utama Anda ke rekening tabungan target, sehingga arus kas Anda tetap terlacak.";"Use the ""+ Deposit"" feature to record saving deposits toward a goal. Each deposit is recorded as a transfer transaction from your main account to the target savings account, keeping your cash flow tracked."
+doc_saving_progress_title;Indikator Progress;Progress Indicator
+doc_saving_progress_desc;Setiap kartu target menampilkan progress bar visual, persentase pencapaian, jumlah yang sudah terkumpul, sisa yang diperlukan, dan estimasi cicilan bulanan yang dibutuhkan untuk mencapai target tepat waktu.;Each goal card displays a visual progress bar, achievement percentage, amount collected, remaining amount needed, and estimated monthly installment required to reach the goal on time.
+doc_saving_tip1;Ketika target 100% tercapai, aplikasi akan menampilkan konfeti dan menandai target sebagai selesai secara otomatis dengan waktu penyelesaian tercatat.;When a goal reaches 100%, the app will display confetti and automatically mark the goal as completed with the completion time recorded.
+doc_settings_intro;Halaman Pengaturan adalah pusat konfigurasi SUMAVIS: dari tampilan, mata uang, kategori, hingga manajemen data.;The Settings page is SUMAVIS's configuration center: from appearance, currency, categories, to data management.
+doc_settings_submenus_title;Sub-menu Pengaturan;Settings Sub-menus
+doc_settings_sub1_title;Preferensi Tampilan;Display Preferences
+doc_settings_sub1_desc;Pilih bahasa (Indonesia/English), tema (Terang/Gelap/Sistem), dan mata uang dasar (IDR/USD).;Choose language (Indonesian/English), theme (Light/Dark/System), and base currency (IDR/USD).
+doc_settings_sub2_title;Kelola Kategori;Manage Categories
+doc_settings_sub2_desc;Tambah, edit, dan hapus kategori pengeluaran/pemasukan beserta ikon dan warna.;Add, edit, and delete expense/income categories with icons and colors.
+doc_settings_sub3_title;Sinkronisasi Google Sheets;Google Sheets Sync
+doc_settings_sub3_desc;Hubungkan akun Google untuk backup & sync data ke spreadsheet Anda.;Connect your Google account for backup & data sync to your spreadsheet.
+doc_settings_sub4_title;Manajemen Database;Database Management
+doc_settings_sub4_desc;Import data dari JSON, export seluruh database, reset ke data awal, atau hapus semua data.;Import data from JSON, export the entire database, reset to initial data, or delete all data.
+doc_settings_sub5_title;Tentang SUMAVIS;About SUMAVIS
+doc_settings_sub5_desc;Informasi versi aplikasi, dokumentasi, kebijakan privasi, dan ketentuan layanan.;Application version information, documentation, privacy policy, and terms of service.
+doc_settings_currency_title;Perubahan Mata Uang Dasar;Base Currency Change
+doc_settings_currency_desc;Mengubah mata uang dasar (IDR ke USD atau sebaliknya) akan mereset seluruh database lokal untuk menjaga konsistensi kalkulasi. Pastikan Anda telah menyinkronkan data ke Google Sheets sebelum melakukan perubahan ini.;Changing the base currency (IDR to USD or vice versa) will reset the entire local database to maintain calculation consistency. Make sure you have synced your data to Google Sheets before making this change.
+doc_sync_intro;SUMAVIS mendukung sinkronisasi dua arah dengan Google Sheets menggunakan OAuth 2.0 — standar keamanan industri. Fitur ini bersifat opsional dan berfungsi sebagai backup cloud.;SUMAVIS supports two-way synchronization with Google Sheets using OAuth 2.0 — the industry security standard. This feature is optional and functions as a cloud backup.
+doc_sync_setup_title;Cara Mengaktifkan Sync;How to Enable Sync
+doc_sync_step1;Buka Pengaturan → Sinkronisasi Google Sheets.;Go to Settings → Google Sheets Sync.
+doc_sync_step2;"Klik ""Hubungkan dengan Google"" dan ikuti proses otorisasi OAuth.";"Click ""Connect with Google"" and follow the OAuth authorization process."
+doc_sync_step3;Pilih atau buat spreadsheet Google Sheets yang akan digunakan.;Select or create the Google Sheets spreadsheet to use.
+doc_sync_step4;"Klik ""Sinkronkan Sekarang"" untuk mulai sync pertama.";"Click ""Sync Now"" to start the first synchronization."
+doc_sync_what_title;Apa yang Disinkronkan;What Gets Synced
+doc_sync_what_li1;Rekening (Accounts);Accounts
+doc_sync_what_li2;Transaksi (Transactions);Transactions
+doc_sync_what_li3;Kategori (Categories);Categories
+doc_sync_what_li4;Anggaran (Budgets);Budgets
+doc_sync_what_li5;Tagihan Rutin (Bills);Recurring Bills
+doc_sync_what_li6;Target Tabungan (Saving Goals);Saving Goals
+doc_sync_what_li7;Portofolio Saham & Crypto;Stock & Crypto Portfolios
+doc_sync_what_li8;Histori Transaksi Investasi;Investment Transaction History
+doc_sync_tip1;Sinkronisasi menggunakan mekanisme conflict resolution berbasis timestamp — data yang lebih baru selalu menang. Anda dapat menyinkronkan dari beberapa perangkat ke spreadsheet yang sama.;Sync uses a timestamp-based conflict resolution mechanism — newer data always wins. You can sync from multiple devices to the same spreadsheet.
+doc_sync_note1;Token OAuth disimpan hanya di memori browser sesi saat ini dan tidak pernah dikirim ke server pihak ketiga selain endpoint resmi Google API.;OAuth tokens are stored only in the current browser session memory and are never sent to any third-party servers other than official Google API endpoints.
+doc_privacy_intro;Keamanan data finansial Anda adalah prioritas utama SUMAVIS. Berikut adalah prinsip-prinsip perlindungan data yang kami terapkan:;The security of your financial data is SUMAVIS's top priority. Here are the data protection principles we implement:
+doc_privacy_feat1_title;Tidak Ada Server Penyimpanan;No Storage Servers
+doc_privacy_feat1_desc;Semua data keuangan Anda tersimpan eksklusif di perangkat Anda sendiri (IndexedDB/Dexie). Kami tidak memiliki atau mengoperasikan server database yang menyimpan data Anda.;All your financial data is stored exclusively on your own device (IndexedDB/Dexie). We do not own or operate database servers that store your data.
+doc_privacy_feat2_title;Tanpa Pelacak / Iklan;No Tracking / Ads
+doc_privacy_feat2_desc;SUMAVIS bebas dari SDK analitik pihak ketiga, pixel iklan, atau alat pelacakan perilaku. Aktivitas finansial Anda sepenuhnya privat.;SUMAVIS is free from third-party analytics SDKs, ad pixels, or behavioral tracking tools. Your financial activity is completely private.
+doc_privacy_feat3_title;Google OAuth Minimal;Minimal Google OAuth
+doc_privacy_feat3_desc;Jika mengaktifkan sync, kami hanya meminta izin akses ke spreadsheet spesifik SUMAVIS di Google Drive Anda — bukan seluruh Drive.;If enabling sync, we only request access permission to the specific SUMAVIS spreadsheet in your Google Drive — not the entire Drive.
+doc_privacy_feat4_title;Komunikasi Langsung ke Google;Direct Google Communication
+doc_privacy_feat4_desc;Semua request ke Google API (Sheets, Finance) dilakukan langsung dari browser Anda — tidak melewati proxy atau server perantara kami.;All requests to Google APIs (Sheets, Finance) are made directly from your browser — not through our proxy or intermediary servers.
+doc_ie_intro;SUMAVIS mendukung manajemen data secara penuh melalui fitur import dan export berbasis format JSON.;SUMAVIS supports full data management through JSON-based import and export features.
+doc_ie_export_title;Export Database;Export Database
+doc_ie_export_desc;"Buka Pengaturan → Manajemen Database → Klik ""Export Database"". Seluruh data akan diunduh sebagai file .json yang dapat disimpan sebagai cadangan manual.";"Go to Settings → Database Management → Click ""Export Database"". All data will be downloaded as a .json file that can be saved as a manual backup."
+doc_ie_import_title;Import Database;Import Database
+doc_ie_import_desc;"Buka Pengaturan → Manajemen Database → Klik ""Import Database"" dan pilih file JSON yang valid. Data akan di-merge atau ditimpa ke database lokal.";"Go to Settings → Database Management → Click ""Import Database"" and select a valid JSON file. Data will be merged or overwritten into the local database."
+doc_ie_reset_title;Reset Database;Reset Database
+doc_ie_reset_desc;"Untuk mengembalikan aplikasi ke kondisi data awal (seed data), gunakan tombol ""Reset ke Data Awal"". Semua data Anda saat ini akan dihapus dan digantikan data contoh bawaan. Tindakan ini tidak dapat dibatalkan.";"To restore the app to its initial data state (seed data), use the ""Reset to Initial Data"" button. All your current data will be deleted and replaced with built-in sample data. This action cannot be undone."
+doc_ie_tip1;Lakukan export database secara rutin sebagai backup offline tambahan di samping sinkronisasi Google Sheets.;Perform database exports regularly as an additional offline backup alongside Google Sheets synchronization.
+doc_footer_question;Ada pertanyaan lain tentang SUMAVIS? Hubungi kami di;Have more questions about SUMAVIS? Contact us at
+doc_footer_copyright;© 2025–2026 SUMAVIS. Semua hak dilindungi.;© 2025–2026 SUMAVIS. All rights reserved.
+dividends_yield_label;Dividen & Yield;Dividends & Yield
+add_dividend_label;Catat Dividen;Record Dividend
+total_dividends_label;TOTAL DIVIDEN DITERIMA;TOTAL DIVIDENDS RECEIVED
+total_dividends_desc;Akumulasi seluruh dividen saham & crypto yang dicatat.;Accumulation of all recorded stock & crypto dividends.
+yield_on_cost_label;YIELD ON COST (YoC);YIELD ON COST (YoC)
+yield_on_cost_desc;Rasio total dividen terhadap biaya investasi awal portofolio aktif.;Ratio of total dividends to the initial investment cost of the active portfolio.
+top_payer_label;KONTRIBUTOR TERBESAR;TOP CONTRIBUTOR
+top_payer_desc;Aset yang menghasilkan dividen kumulatif terbesar.;Asset that generated the largest cumulative dividend.
+monthly_div_trend_title;Tren Pendapatan Dividen Bulanan;Monthly Dividend Income Trend
+dividend_received;Dividen Diterima;Dividend Received
+no_dividend_payouts;Belum ada data dividen yang tercatat.;No dividend data recorded yet.
+div_contribution_title;Kontribusi per Aset;Contribution per Asset
+dividend_logs_title;Log Transaksi Dividen;Dividend Transaction Log
+quantity_label_cap;JUMLAH UNIT;QUANTITY
+dividend_per_unit_label;DIVIDEN PER UNIT (DPS);DIVIDEND PER UNIT (DPS)
+gross_dividend_label;BRUTO;GROSS
+tax_label_cap;PAJAK;TAX
+net_received_label;NETO;NET
+account_label_cap;REKENING;ACCOUNT
+actions_label_cap;AKSI;ACTIONS
+no_dividend_transactions;Belum ada data dividen yang dicatat.;No dividend transactions recorded yet.
+deposit_destination_label;Rekening Penerima;Deposit Destination
+add_fees_taxes_label;Tambahkan Biaya Admin & Pajak;Add Fees & Taxes
+confirm_delete_inv_tx;Hapus log transaksi ini?;Delete this transaction log?
+choose_asset_label;PILIH ASET;SELECT ASSET
+choose_asset_option;Pilih Aset Yang Dimiliki;Select Owned Asset
+total_label;Total;Total
+admin_fee_label;Biaya Admin;Admin Fee
+tax_label;Pajak;Tax
+sankey_fees_taxes;Biaya & Pajak;Fees & Taxes
+investment_portfolio;Investasi Portofolio;Investment Portfolio
+spending;Pengeluaran;Spending
+pdf_sankey_title;3. Diagram Aliran Arus Kas (Sankey);3. Cash Flow Diagram (Sankey)
+total_invested;Total Diinvestasikan;Total Invested

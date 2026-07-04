@@ -1,0 +1,68 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+jspm_packages/
+src_temp/
+
+
+# Build outputs
+dist/
+dist-ssr/
+*.local
+
+# Custom folders to ignore
+OTHER/
+other/
+/OTHER/
+/other/
+scratch/
+.agents/
+/.agents
+/.agents/
+
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swo
+*.swp
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Env configs
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.*.local
+.env.example
+
+# Temp and backup files
+* - Copy*
+*Copy*
+*.tmp
+*.bak
+vite.config.ts.timestamp-*
+.eslintcache
+
+#updater script
+update.sh
+fresh.sh
+
+#encrypt_decrypt
+encrypt.cjs

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>SUMAVIS Auto Seed</title>
+  <style>
+    body { font-family: system-ui, sans-serif; background: #030712; color: #e2e8f0; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; flex-direction: column; gap: 16px; }
+    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; padding: 32px 40px; max-width: 480px; text-align: center; }
+    h1 { color: #10b981; font-size: 1.5rem; margin: 0 0 8px; }
+    p { color: #94a3b8; font-size: 0.9rem; margin: 0; }
+    .status { font-size: 0.85rem; margin-top: 16px; padding: 10px 16px; border-radius: 8px; }
+    .loading { background: #1e293b; color: #94a3b8; }
+    .success { background: #064e3b; color: #6ee7b7; }
+    .error { background: #450a0a; color: #fca5a5; }
+    .spinner { width: 32px; height: 32px; border: 3px solid #1e293b; border-top-color: #10b981; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 16px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    a { color: #10b981; text-decoration: none; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="spinner" id="spinner"></div>
+    <h1>SUMAVIS Auto Seed</h1>
+    <p>Mengimpor data dummy ke database lokal...</p>
+    <div class="status loading" id="status">Mengambil data dari server...</div>
+  </div>
+
+  <script type="module">
+    import Dexie from 'https://cdn.jsdelivr.net/npm/dexie@3/dist/dexie.mjs';
+
+    const statusEl = document.getElementById('status');
+    const spinnerEl = document.getElementById('spinner');
+
+    function setStatus(msg, type = 'loading') {
+      statusEl.textContent = msg;
+      statusEl.className = `status ${type}`;
+    }
+
+    async function seed() {
+      try {
+        setStatus('Mengambil seed-data.json...', 'loading');
+
+        const res = await fetch('/seed-data.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}: Gagal ambil seed-data.json`);
+        const backup = await res.json();
+
+        setStatus('Menghubungkan ke database...', 'loading');
+
+        const db = new Dexie('SumavisDatabase');
+        await db.open();
+
+        setStatus('Menghapus data lama...', 'loading');
+
+        const numericKeys = [
+          'balance', 'amount', 'quantity', 'avg_price', 'current_price',
+          'price', 'target_amount', 'current_amount', 'deleted', 'is_active'
+        ];
+
+        function normalize(item) {
+          const n = { ...item };
+          numericKeys.forEach(key => {
+            if (n[key] !== undefined) {
+              if (n[key] === null || n[key] === '') {
+                n[key] = key === 'is_active' ? 1 : 0;
+              } else {
+                let s = String(n[key]).trim().replace(/[Rp$€£¥\s]/gi, '');
+                if (s.includes('.') && s.includes(',')) {
+                  s = s.indexOf('.') < s.indexOf(',') ? s.replace(/\./g, '').replace(/,/g, '.') : s.replace(/,/g, '');
+                } else if (s.includes(',')) {
+                  const parts = s.split(',');
+                  s = parts.length === 2 && parts[1].length === 3 ? s.replace(/,/g, '') : s.replace(/,/g, '.');
+                } else if (s.includes('.')) {
+                  const parts = s.split('.');
+                  if (parts.length > 2) s = s.replace(/\./g, '');
+                  else if (parts.length === 2 && parts[1].length === 3) s = s.replace(/\./g, '');
+                }
+                const parsed = parseFloat(s);
+                n[key] = isNaN(parsed) ? 0 : parsed;
+              }
+            } else {
+              if (key === 'deleted') n[key] = 0;
+              else if (key === 'is_active') n[key] = 1;
+            }
+          });
+          if (n.deleted === undefined || n.deleted === null || n.deleted === '') n.deleted = 0;
+          return n;
+        }
+
+        await db.transaction('rw', db.tables, async () => {
+          for (const tableName of Object.keys(backup)) {
+            let table;
+            try { table = db.table(tableName); } catch { continue; }
+            await table.clear();
+            const rows = backup[tableName];
+            if (rows && rows.length > 0) {
+              const normalized = rows.map(normalize);
+              await table.bulkAdd(normalized);
+            }
+          }
+        });
+
+        spinnerEl.style.display = 'none';
+        setStatus(`✅ Berhasil! ${Object.values(backup).flat().length} record diimport. Mengalihkan ke Dashboard...`, 'success');
+
+        setTimeout(() => {
+          window.location.href = '/#/';
+        }, 2500);
+
+      } catch (err) {
+        spinnerEl.style.display = 'none';
+        setStatus(`❌ Error: ${err.message}`, 'error');
+        console.error('Seed error:', err);
+      }
+    }
+
+    seed();
+  </script>
+</body>
+</html>
