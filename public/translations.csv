@@ -795,3 +795,32 @@ investment_portfolio;Investasi Portofolio;Investment Portfolio
 spending;Pengeluaran;Spending
 pdf_sankey_title;3. Diagram Aliran Arus Kas (Sankey);3. Cash Flow Diagram (Sankey)
 total_invested;Total Diinvestasikan;Total Invested
+rdpu_mutual_funds;Reksa Dana / RDPU;Mutual Funds
+deposits_label;Deposito Bank;Bank Deposits
+interest_rate_label;Suku Bunga (% p.a.);Interest Rate (% p.a.)
+maturity_date_label;Tanggal Jatuh Tempo;Maturity Date
+estimated_monthly_interest;Est. Bunga Bulanan;Est. Monthly Interest
+asset_type_label;Tipe Investasi;Investment Type
+mutual_fund_badge;Reksa Dana;Mutual Fund
+deposit_badge;Deposito;Deposit
+no_mutual_funds;Belum ada kepemilikan Reksa Dana.;No mutual fund holdings registered.
+no_deposits;Belum ada kepemilikan Deposito.;No bank deposits registered.
+buy_mutual_fund_label;Beli Reksa Dana;Buy Mutual Fund
+sell_mutual_fund_label;Jual Reksa Dana;Sell Mutual Fund
+buy_deposit_label;Buka Deposito;Open Deposit
+sell_deposit_label;Cairkan Deposito;Withdraw Deposit
+deposit_principal_label;Nominal Pokok Deposito;Deposit Principal Amount
+deposit_rate_label;Suku Bunga;Interest Rate
+days_to_maturity;Hari menuju jatuh tempo;Days to maturity
+matured_label;Jatuh Tempo;Matured
+mutual_fund_symbol_label;Kode Reksa Dana;Mutual Fund Code
+deposit_symbol_label;Kode Deposito;Deposit Code
+mutual_fund_name_label;Nama Reksa Dana;Mutual Fund Name
+deposit_name_label;Nama Deposito;Deposit Name
+edit_mutual_fund_title;Edit Reksa Dana;Edit Mutual Fund
+edit_deposit_title;Edit Deposito;Edit Deposit
+nav_per_unit_buy_label;Harga NAV per Unit;NAV per Unit Price
+avg_nav_buy_label;NAV Rata-Rata Beli;Avg Buy NAV
+current_nav_label;NAV Saat Ini;Current NAV
+mutual_funds_portfolio_subtitle;Pelacakan reksa dana pasar uang dan reksa dana lainnya.;Track money market and other mutual fund portfolios.
+deposits_portfolio_subtitle;Pelacakan deposito berjangka dan simpanan berbunga.;Track bank term deposits and interest-yielding savings.
