@@ -856,3 +856,116 @@ target_sell_qty_placeholder;100% dari total aset (Default);100% of holdings (Def
 simulated_profit_label;Estimasi Potensi Profit / Loss;Projected Profit / Loss
 simulated_proceeds_label;Estimasi Total Hasil Penjualan;Projected Total Proceeds
 remaining_portfolio_label;Sisa Aset Pasca Penjualan;Remaining Asset & Avg Price
+equitrend;Equitrend Analisis Tren;Equitrend Analytics
+equitrend_title;Equitrend & Pertumbuhan Ekuitas;Equitrend & Equity Growth
+equitrend_subtitle;Analisis tren portofolio, kurva ekuitas historis, dan indikator teknikal saham/crypto.;Portfolio trend analysis, historical equity curve, and technical indicators.
+equity_growth_curve;Kurva Pertumbuhan Ekuitas;Equity Growth Curve
+health_score_label;Skor Kesehatan Portofolio;Portfolio Health Score
+trend_signals_title;Sinyal & Indikator Tren Portofolio;Portfolio Trend Signals & Indicators
+bullish_uptrend;Bullish Uptrend;Bullish Uptrend
+bearish_downtrend;Bearish Downtrend;Bearish Downtrend
+sideways_label;Sideways / Konsolidasi;Sideways / Consolidating
+benchmark_comparison_title;Performa Portofolio vs Pasar;Portfolio vs Market Benchmark
+my_portfolio_tab;Portofolio Saya;My Portfolio
+market_screener_tab;Screening Saham Pasar (Market Screener);Market Stock Screener
+search_stock_placeholder;Cari kode ticker atau nama saham (misal: BBCA, NVDA, BTC)...;Search ticker or company name (e.g. BBCA, NVDA, BTC)...
+ai_technical_modal_title;Analisis Teknikal & Rekomendasi AI;AI Technical Analysis & Signal
+run_live_ai_analysis;Jalankan Analisis AI Live;Run Live AI Analysis
+support_level_label;Level Support;Support Levels
+resistance_level_label;Level Resistance;Resistance Levels
+target_price_label;Target Harga;Target Price
+confidence_score_label;Tingkat Keyakinan AI;AI Confidence Score
+ai_stock_chat_tab;💬 Tanya AI Equitrend;💬 Ask AI Stock Assistant
+ask_ai_placeholder;Ketik pertanyaan seputar emiten ini (misal: Berapa Stop Loss ideal?)...;Type question about this stock (e.g. What is the ideal Stop Loss?)...
+send_button;Kirim;Send
+equitrend_search_placeholder;Cari simbol emiten (misal: BBCA, BBRI, NVDA, BTC)...;Search ticker symbol (e.g., BBCA, BBRI, NVDA, BTC)...
+equitrend_tab_screener;Market Screener;Market Screener
+equitrend_tab_saved;Analisis Tersimpan;Saved Analyses
+equitrend_active_ticker;Ticker Aktif;Active Ticker
+equitrend_live_price;Harga Live;Live Price
+equitrend_24h_change;Perubahan 24j;24h Change
+equitrend_day_high;Tertinggi Harian;Day High
+equitrend_day_low;Terendah Harian;Day Low
+equitrend_volume;Volume Transaksi;Trading Volume
+timeframe_1d;1 Hari;1 Day
+timeframe_1w;1 Minggu;1 Week
+timeframe_1m;1 Bulan;1 Month
+timeframe_3m;3 Bulan;3 Months
+timeframe_1y;1 Tahun;1 Year
+timeframe_all;Semua;All
+chart_type_candlestick;Lilin (Candlestick);Candlestick
+chart_type_line;Garis (Line);Line
+screener_scalping;Scalping;Scalping
+screener_fast;Fast Trade;Fast Trade
+screener_swing;Swing Trade;Swing Trade
+screener_dividen;Dividen;Dividend
+screener_semua_saham;Semua Saham;All Stocks
+screener_custom_ai;Custom AI;Custom AI
+screener_ask_ai;Minta AI Cari;Ask AI Screener
+screener_save_all;Simpan Semua;Save All
+screener_saved_all_feedback;Tersimpan Semua!;All Saved!
+screener_custom_prompt_label;Perintah & Catatan Khusus AI Screening;Custom AI Screening Prompt & Notes
+screener_custom_prompt_placeholder;Tulis perintah kustom untuk AI (misal: "Cari emiten perbankan dengan RSI < 50 yang sedang dipompa volume akumulasi")...;Type custom prompt for AI (e.g., "Find banking stocks with RSI < 50 undergoing volume accumulation")...
+screener_run_custom_ai;Jalankan Custom AI Screening;Run Custom AI Screening
+screener_target_market;Pasar Target;Target Market
+market_all;Semua Pasar;All Markets
+market_idx;🇮🇩 IDX (IHSG);🇮🇩 IDX (IHSG)
+market_us;🇺🇸 US Stocks;🇺🇸 US Stocks
+market_crypto;🪙 Crypto;🪙 Crypto
+table_symbol;Simbol / Emiten;Symbol / Issuer
+table_price;Harga Live Terakhir;Last Live Price
+table_change;Perubahan (%);Change (%)
+table_signal;Sinyal Equitrend;Equitrend Signal
+table_rsi;RSI (14);RSI (14)
+table_div_yield;Div. Yield;Div. Yield
+table_actions;Aksi;Actions
+table_search_yahoo;Cari di Yahoo Live;Search on Yahoo Live
+filter_category;Kategori Pasar;Market Category
+filter_signal;Sinyal Tren;Trend Signal
+filter_change;Perubahan Harga;Price Change
+filter_rsi;Kondisi RSI;RSI Condition
+filter_reset;Reset Filter;Reset Filters
+current_yield;Yield Saat Ini;Current Yield
+avg_3yr_yield;Rata-rata Yield 3Thn;3-Yr Avg Yield
+historical_cash_dividends;Historis Dividen Tunai (Per Lembar Saham);Historical Cash Dividends (Per Share)
+historical_yield;Historis Yield;Historical Yield
+ai_panel_title;Equitrend AI Engine;Equitrend AI Engine
+ai_mode_scalping;Scalping;Scalping
+ai_mode_fast;Fast Trade;Fast Trade
+ai_mode_swing;Swing Trade;Swing Trade
+ai_mode_dividend;Dividen;Dividend
+ai_tab_analysis;Analisis AI;AI Analysis
+ai_tab_news;Berita Emiten;Issuer News
+ai_tab_chat;Tanya AI Assistant;Ask AI Assistant
+ai_rec_signal;Sinyal Rekomendasi AI;AI Signal Recommendation
+ai_confidence;Keyakinan;Confidence
+ai_entry;AI Entry;AI Entry
+ai_tp1;Target TP1;Target TP1
+ai_tp2;Target TP2;Target TP2
+ai_stop_loss;Stop Loss;Stop Loss
+ai_narrative_title;Analisis Narasi AI Live;AI Live Narrative Analysis
+ai_catalysts_title;Katalis & Sinyal Utama;Key Catalysts & Signals
+ai_auto_news_title;Berita Emiten Terkini (Auto Refreshed);Latest Issuer News (Auto Refreshed)
+ai_update_news;Update Berita;Update News
+ai_chat_placeholder;Ketik pertanyaan seputar emiten ini...;Ask any question about this stock...
+ai_send;Kirim;Send
+saved_collection_title;Koleksi Analisa AI Tersimpan;Saved AI Analysis Collection
+filter_saved_date;Filter Tanggal Disimpan;Filter Saved Date
+date_all;Semua Tanggal;All Dates
+date_today;Hari Ini;Today
+date_yesterday;Kemarin;Yesterday
+date_7days;7 Hari Terakhir;Last 7 Days
+date_30days;30 Hari Terakhir;Last 30 Days
+date_custom;Rentang Kustom;Custom Range
+date_grouping;Kelompokkan Per Tanggal;Group By Date
+date_grouping_active;Grup Tanggal: AKTIF;Date Grouping: ACTIVE
+status_all;Semua Status;All Status
+status_analyzed;Telah Dianalisa;Analyzed
+status_not_analyzed;Belum Dianalisa;Pending Analysis
+export_csv;Ekspor CSV;Export CSV
+refresh_prices;Refresh Harga;Refresh Prices
+price_saved;Harga Disimpan;Saved Price
+price_current;Harga Sekarang;Current Price
+target_status;Status Target;Target Status
+open_chart;Buka Chart;Open Chart
+

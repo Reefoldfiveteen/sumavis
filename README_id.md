@@ -37,6 +37,7 @@
 
 Aplikasi ini didesain khusus untuk mendukung skenario keuangan modern:
 - 💱 **Dukungan Multi-Kurs (Multi-Currency)**: Kelola rekening, transaksi, dan aset investasi dalam mata uang utama (**IDR**, **USD**) serta **15+ mata uang dunia & regional lainnya** (seperti SGD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, HKD, KRW, MYR, THB, PHP, INR, VND). Nilai tukar (exchange rate) dikonversi secara dinamis menggunakan pembaruan kurs real-time dari Google Finance. Rekonstruksi saldo historis tetap akurat di semua mata uang.
+- 🤖 **AI Vision Multimodal Intelligence**: Integrasi engine AI cerdas terpadu yang mendukung **Gemini**, **OpenAI**, **9router**, **OpenRouter**, dan model **Ollama Vision** lokal. Import kepemilikan portofolio saham/crypto, saldo rekening m-Banking & e-Wallet, serta struk belanja & bukti transfer secara otomatis melalui unggah screenshot atau paste `Ctrl+V`.
 - 🗣️ **Dukungan Multi-Bahasa (Multi-Language / i18n)**: Antarmuka yang ramah pengguna dengan pilihan penuh bahasa **Indonesia** dan **English**. Seluruh label, petunjuk, dan dokumentasi in-app otomatis berubah sesuai bahasa pilihan Anda.
 - 🌓 **Tema Fleksibel**: Dukungan penuh untuk mode **Gelap (Dark Mode)**, **Terang (Light Mode)**, atau mengikuti **Sistem** operasi Anda.
 - ☁️ **Google Sheets Sync**: Backup aman dan sinkronisasi dua arah ke spreadsheet Google Drive pribadi Anda.
@@ -47,10 +48,11 @@ Aplikasi ini didesain khusus untuk mendukung skenario keuangan modern:
 
 | Fitur | Deskripsi |
 |---|---|
-| 📊 **Dashboard** | Net Worth terpadu, Sankey cashflow dinamis, grafik bulanan/tahunan, dan ekspor laporan PDF. |
-| 💸 **Transaksi** | Catat pengeluaran, pemasukan, dan transfer antar rekening dengan dukungan tag, kategori, biaya admin (fee), dan pajak (tax). |
-| 🏦 **Rekening & Akun** | Kelola akun aset, dompet tunai, kartu kredit (liabilitas), dan kas RDN broker dalam berbagai mata uang global (IDR, USD, SGD, EUR, dll.). Saldo historis direkonstruksi secara otomatis saat berganti bulan. |
-| 📈 **Investasi** | Pantau kepemilikan Saham (IDR local 4-tick/USD US market) dan Crypto (IDR/USD) dengan perhitungan harga rata-rata (avg price), Floating PnL real-time, dan histori transaksi lengkap. Dilengkapi dengan **Dividen & Yield Tracker** khusus untuk memantau pendapatan dividen kumulatif dan Yield on Cost (YoC). |
+| 🤖 **AI Vision Assist** | Scan otomatis screenshot portofolio saham/crypto (Stockbit, Ajaib, Bibit, Pintu, IPOT), saldo m-Banking/e-Wallet (BCA, Mandiri, GoPay, OVO), dan struk belanja/transfer via Gemini, OpenAI, 9router, OpenRouter, atau Ollama lokal dengan dukungan `Ctrl+V`. |
+| 📊 **Dashboard** | Net Worth terpadu, Sankey cashflow dinamis, grafik bulanan/tahunan, ekspor laporan PDF, dan shortcut tombol cepat **Scan Struk AI**. |
+| 💸 **Transaksi** | Catat pengeluaran, pemasukan, dan transfer antar rekening dengan dukungan tag, kategori, biaya admin (fee), pajak (tax), serta scanner struk AI instan. |
+| 🏦 **Rekening & Akun** | Kelola akun aset, dompet tunai, kartu kredit (liabilitas), dan kas RDN broker dalam berbagai mata uang global (IDR, USD, SGD, EUR, dll.). Saldo historis direkonstruksi secara otomatis saat berganti bulan. Dilengkapi scanner AI untuk screenshot m-Banking & e-Wallet. |
+| 📈 **Investasi** | Pantau kepemilikan Saham (IDR local 4-tick/USD US market) dan Crypto (IDR/USD) dengan perhitungan harga rata-rata (avg price), Floating PnL real-time, dan import tabel portofolio AI Vision. Dilengkapi dengan **Dividen & Yield Tracker** khusus untuk memantau pendapatan dividen kumulatif dan Yield on Cost (YoC). |
 | 💰 **Anggaran** | Atur batas anggaran bulanan atau tahunan per kategori belanja lengkap dengan visualisasi progress bar dan notifikasi batas aman. |
 | 🔔 **Tagihan Rutin** | Kelola pembayaran berulang (mingguan, bulanan, tahunan) dengan fitur pencatatan otomatis sekali klik. |
 | 🎯 **Target Tabungan** | Target tabungan spesifik (liburan, dana darurat, dll.) terintegrasi langsung dengan mutasi transfer rekening tujuan dan konfeti pencapaian. |
@@ -305,11 +307,10 @@ SOFTWARE.
 ---
 
 <div align="center">
-  <p>Dibuat dengan ❤️ untuk pengguna keuangan Indonesia</p>
+  <p>SUMAVIS 💵</p>
   <p>
     <a href="https://sumavis.vercel.app/#/documentation">📖 Dokumentasi</a> ·
     <a href="https://sumavis.vercel.app/#/privacy-policy">🔒 Kebijakan Privasi</a> ·
     <a href="https://sumavis.vercel.app/#/terms-of-service">📋 Ketentuan Layanan</a>
   </p>
-  <p><strong>support@sumavis.my.id</strong></p>
 </div>

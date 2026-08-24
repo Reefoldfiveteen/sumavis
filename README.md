@@ -38,6 +38,7 @@
 
 It is specifically tailored to support modern financial workflows:
 - 💱 **Multi-Currency Support**: Manage accounts, transactions, and investment portfolios in major currencies (**IDR**, **USD**) as well as **15+ other global & regional currencies** (such as SGD, EUR, GBP, JPY, AUD, CAD, CHF, CNY, HKD, KRW, MYR, THB, PHP, INR, VND). Exchange rates are dynamically converted using real-time rates fetched from Google Finance. Historical balance reconstruction remains accurate across all currencies.
+- 🤖 **AI Vision Multimodal Intelligence**: Integrated smart AI engine supporting **Gemini**, **OpenAI**, **9router**, **OpenRouter**, and local **Ollama Vision** models. Effortlessly import stock/crypto portfolio holdings, m-Banking & e-Wallet account balances, and shopping/transfer receipts via screenshot uploads or direct `Ctrl+V` clipboard paste.
 - 🗣️ **Multi-Language Support (i18n)**: User-friendly interface with full support for **Indonesian** and **English**. All labels, tooltips, hints, and in-app documentation automatically change according to your selected language.
 - 🌓 **Flexible Themes**: Full support for **Dark Mode**, **Light Mode**, or follow your OS **System** preference.
 - ☁️ **Google Sheets Sync**: Secure backup and two-way synchronization to your personal Google Drive spreadsheet.
@@ -48,10 +49,11 @@ It is specifically tailored to support modern financial workflows:
 
 | Feature | Description |
 |---|---|
-| 📊 **Dashboard** | Unified Net Worth, dynamic Sankey cashflow diagrams, monthly/yearly trend charts, and PDF report export. |
-| 💸 **Transactions** | Record spending, income, and transfers between accounts with support for tags, categories, admin fees, and taxes. |
-| 🏦 **Accounts & Wallets** | Manage asset accounts, cash wallets, credit cards (liabilities), and broker RDN cash in various global currencies. Historical balances are automatically reconstructed when navigating to past months. |
-| 📈 **Investments** | Monitor holdings of Stocks (IDR local 4-tick / US USD market) and Crypto (IDR/USD) with average purchase price calculations, real-time Floating PnL, and complete transaction history. Includes a dedicated **Dividends & Yield Tracker** to monitor cumulative dividend payouts and Yield on Cost (YoC). |
+| 🤖 **AI Vision Assist** | Automatically scan screenshots of stock/crypto portfolios (Stockbit, Ajaib, Bibit, Pintu, IPOT), m-Banking/e-Wallet balances (BCA, Mandiri, GoPay, OVO), and physical/digital transaction receipts via Gemini, OpenAI, 9router, OpenRouter, or local Ollama with `Ctrl+V` paste support. |
+| 📊 **Dashboard** | Unified Net Worth, dynamic Sankey cashflow diagrams, monthly/yearly trend charts, PDF report export, and a quick **Scan Struk AI** shortcut button. |
+| 💸 **Transactions** | Record spending, income, and transfers between accounts with support for tags, categories, admin fees, taxes, and instant AI receipt scanning. |
+| 🏦 **Accounts & Wallets** | Manage asset accounts, cash wallets, credit cards (liabilities), and broker RDN cash in various global currencies. Includes AI screenshot scanning for m-Banking and e-Wallet balances. |
+| 📈 **Investments** | Monitor holdings of Stocks (IDR local 4-tick / US USD market) and Crypto (IDR/USD) with average purchase price calculations, real-time Floating PnL, and AI Vision screenshot portfolio table import. Includes a dedicated **Dividends & Yield Tracker** to monitor cumulative dividend payouts and Yield on Cost (YoC). |
 | 💰 **Budgets** | Set monthly or yearly budget limits per category, complete with visual progress bars and warning notifications when approaching limits. |
 | 🔔 **Recurring Bills** | Track recurring payments (weekly, monthly, yearly) with a one-click payment recording feature. |
 | 🎯 **Saving Goals** | Set specific saving targets (vacation, emergency fund, etc.) integrated directly with transfer transactions, target savings accounts, and completion confetti. |
@@ -306,11 +308,10 @@ SOFTWARE.
 ---
 
 <div align="center">
-  <p>Made with ❤️ for smart personal finance tracking</p>
+  <p>SUMAVIS Finance Tracker 💵</p>
   <p>
     <a href="https://sumavis.vercel.app/#/documentation">📖 Documentation</a> ·
     <a href="https://sumavis.vercel.app/#/privacy-policy">🔒 Privacy Policy</a> ·
     <a href="https://sumavis.vercel.app/#/terms-of-service">📋 Terms of Service</a>
   </p>
-  <p><strong>support@sumavis.my.id</strong></p>
 </div>
