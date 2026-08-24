@@ -839,3 +839,20 @@ avg_nav_buy_label;NAV Rata-Rata Beli;Avg Buy NAV
 current_nav_label;NAV Saat Ini;Current NAV
 mutual_funds_portfolio_subtitle;Pelacakan reksa dana pasar uang dan reksa dana lainnya.;Track money market and other mutual fund portfolios.
 deposits_portfolio_subtitle;Pelacakan deposito berjangka dan simpanan berbunga.;Track bank term deposits and interest-yielding savings.
+ai_settings_title;Integrasi AI & Vision;AI & Vision Integration
+ai_provider_label;Penyedia AI (Provider);AI Provider
+ai_api_key_label;API Key AI;AI API Key
+ai_custom_endpoint_label;Custom Endpoint (Opsional);Custom Endpoint (Optional)
+ai_model_name_label;Nama Model (Opsional);Model Name (Optional)
+ai_settings_saved;Pengaturan AI berhasil disimpan.;AI settings saved successfully.
+scan_screenshot_button;Scan Struk / Screenshot (Ctrl+V);Scan Receipt / Screenshot (Ctrl+V)
+scanning_image_status;Menganalisis gambar struk/portofolio...;Analyzing receipt/portfolio image...
+scan_success_alert;Berhasil mengekstrak data investasi dari gambar!;Successfully extracted investment data from image!
+scan_error_alert;Gagal membaca gambar. Pastikan gambar berisi detail transaksi yang jelas.;Failed to read image. Ensure the image contains clear transaction details.
+dca_sell_simulation_title;Simulasi Target Penjualan (Exit / Profit Taking);Target Selling & Exit Simulation
+target_sell_price_label;Target Harga Jual per Unit;Target Selling Price
+target_sell_qty_label;Jumlah Unit/Lot Dijual;Quantity/Lots to Sell
+target_sell_qty_placeholder;100% dari total aset (Default);100% of holdings (Default)
+simulated_profit_label;Estimasi Potensi Profit / Loss;Projected Profit / Loss
+simulated_proceeds_label;Estimasi Total Hasil Penjualan;Projected Total Proceeds
+remaining_portfolio_label;Sisa Aset Pasca Penjualan;Remaining Asset & Avg Price
