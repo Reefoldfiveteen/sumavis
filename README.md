@@ -173,19 +173,7 @@ npm run build
 npm run preview
 ```
 
-### Environment Variables (Optional)
 
-Create a `.env.local` file for optional configurations:
-
-```env
-# Support email displayed in the policies section
-VITE_DEV_EMAIL=support@sumavis.my.id
-
-# Google OAuth Client ID (required for Google Sheets Sync)
-VITE_GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
-```
-
----
 
 ## 📁 Project Structure
 

@@ -172,18 +172,6 @@ npm run build
 npm run preview
 ```
 
-### Variabel Lingkungan (Opsional)
-
-Buat file `.env.local` untuk konfigurasi opsional:
-
-```env
-# Email support yang ditampilkan di halaman kebijakan
-VITE_DEV_EMAIL=support@sumavis.my.id
-
-# Google OAuth Client ID (untuk fitur sync Google Sheets)
-VITE_GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
-```
-
 ---
 
 ## 📁 Struktur Proyek
