@@ -968,4 +968,31 @@ price_saved;Harga Disimpan;Saved Price
 price_current;Harga Sekarang;Current Price
 target_status;Status Target;Target Status
 open_chart;Buka Chart;Open Chart
+doc_toc_equitrend;Equitrend Trading & AI Engine;Equitrend Trading & AI Engine
+doc_eq_intro;Equitrend Trading & AI Engine adalah sistem intelijen pasar real-time yang memadukan indikator teknikal tingkat lanjut, analisis AI multimodal, live market screener, dan pelacakan historis dividen.;Equitrend Trading & AI Engine is a real-time market intelligence system combining advanced technical indicators, multimodal AI analysis, live market screener, and historical dividend tracking.
+doc_eq_chart_title;Grafik Teknikal & Indikator Live;Live Technical Charting & Indicators
+doc_eq_chart_desc;Memuat grafik candlestick real-time dari Yahoo Finance untuk saham IDR, saham US, dan Crypto. Dilengkapi kalkulasi otomatis indikator RSI, MA20/50/200, MACD, Bollinger Bands, Stochastic, serta level Support & Resistance.;Loads real-time candlestick charts from Yahoo Finance for IDR stocks, US stocks, and Crypto. Features automatic calculation of RSI, MA20/50/200, MACD, Bollinger Bands, Stochastic, and Support & Resistance levels.
+doc_eq_screener_title;Real-Time Market Screener & Custom AI;Real-Time Market Screener & Custom AI
+doc_eq_screener_desc;Fitur screening emiten dinamis berdasarkan kategori pasar (IDX, US, Crypto) dan strategi trading: Scalping, Fast Trade, Swing, Dividen, Semua Saham, dan Custom AI. Pengguna dapat memasukkan perintah & catatan kustom untuk mengarahkan analisis AI Engine.;Dynamic stock screening feature by market category (IDX, US, Crypto) and strategy focus: Scalping, Fast Trade, Swing, Dividend, All Stocks, and Custom AI. Users can input custom prompt instructions & notes to guide the AI Engine analysis.
+doc_eq_dividend_title;Historis Dividen Nominal (DPS) & Yield;Nominal Dividend History (DPS) & Yield
+doc_eq_dividend_desc;Menampilkan nilai tunai dividen per lembar saham (DPS) secara historis (misal: 2023: Rp 1.094, 2024: Rp 397, 2025: Rp 385) serta rata-rata dividen yield 3 tahun yang dihitung secara dinamis mengikuti tahun berjalan.;Displays historical cash dividend per share (DPS) nominal values (e.g., 2023: Rp 1,094, 2024: Rp 397, 2025: Rp 385) and 3-year average dividend yield dynamically computed to the current year.
+doc_eq_news_title;Berita Emiten Terkini (Auto Refreshed);Latest Issuer News (Auto Refreshed)
+doc_eq_news_desc;Sistem secara otomatis mengambil berita terkini emiten dari Yahoo Finance & Google News, menginjeksi headline ke dalam prompt analisis AI, dan melakukan silent auto-refresh setiap 90 detik.;The system automatically fetches live issuer news from Yahoo Finance & Google News, injects headlines into AI prompts, and performs a silent auto-refresh every 90 seconds.
+doc_eq_saved_title;Pengelolaan Analisis Tersimpan & Hapus Massal;Saved Analyses Management & Mass Delete
+doc_eq_saved_desc;Dukungan filter berdasarkan tanggal simpan (Hari Ini, Kemarin, 7 Hari Terakhir, 30 Hari Terakhir, Rentang Kustom), fitur Kelompokkan Per Tanggal untuk mencegah tumpukan riwayat, badge tanggal relatif, serta fitur centang multi-pilih untuk Hapus Terpilih atau Hapus Semua Data.;Support for saved date filtering (Today, Yesterday, Last 7 Days, Last 30 Days, Custom Range), Group By Date feature to prevent item pileups, relative date badges, and multi-select checkboxes for Mass Delete Selected or Clear All Data.
 
+
+
+alert_update_failed;Gagal memperbarui data: ;Failed to update: 
+unpaid_label;Belum Terbayar;Unpaid
+bill_cumulative_chart;Grafik Akumulasi Pembayaran Tagihan;Cumulative Bill Payment Chart
+confirm_delete_budget;Apakah Anda yakin ingin menghapus target anggaran ini?;Are you sure you want to delete this budget goal?
+delete_category;Hapus Kategori;Delete Category
+mutual_fund_label;Reksa Dana;Mutual Fund
+deposit_label;Deposito;Deposit
+edit_crypto_asset;Ubah Aset Kripto;Edit Crypto Asset
+alert_edit_goal_failed;Gagal mengubah target: ;Failed to update goal: 
+edit_goal_title;Edit Target;Edit Goal
+input_amount_desc;Masukkan keterangan dan nominal transaksi!;Please enter description and transaction amount!
+error_save_tx;Gagal menyimpan transaksi: ;Failed to save transaction: 
+confirm_delete_tx;Apakah Anda yakin ingin menghapus transaksi ini?;Are you sure you want to delete this transaction?
