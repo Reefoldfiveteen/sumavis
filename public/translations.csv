@@ -996,3 +996,5 @@ edit_goal_title;Edit Target;Edit Goal
 input_amount_desc;Masukkan keterangan dan nominal transaksi!;Please enter description and transaction amount!
 error_save_tx;Gagal menyimpan transaksi: ;Failed to save transaction: 
 confirm_delete_tx;Apakah Anda yakin ingin menghapus transaksi ini?;Are you sure you want to delete this transaction?
+floating_pnl;Floating Loss / Gain;Floating Loss / Gain
+assets_label;Aset;Assets
